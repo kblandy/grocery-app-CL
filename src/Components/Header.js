@@ -1,19 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import GroceryListStats from './GroceryListStats';
-import Location from './Location'
+import Location from './Location';
 
 const Header = ({ items, title }) => {
     return (
         <header>
-        <div className="container">
-        <GroceryListStats 
-                items={items} 
-            /> 
-        <Location />
-        </div>
-        
-        <h1>{title}</h1>
+            <div className="container">
+            <h1>{title}</h1>
+            <GroceryListStats 
+                    items={items}
+                /> 
+            <Location />
+            </div>
+            
         </header>
+        
+
+
     );
 };
 
