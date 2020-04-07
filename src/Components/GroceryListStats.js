@@ -9,12 +9,12 @@ const GroceryListStats = ({ items, price }) => {
 
     return (
         <span>
-            <p>
-            Total Items: { totalItems }
-            </p>
-            <p>
-            Total Price: { totalItemsPrice}
-            </p>
+                <p>
+                Total Items: { totalItems }
+                </p>
+                <p>
+                Total Price: { totalItemsPrice}
+                </p>
         </span>
     );
 };

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Navigation from './Navigation';
 import Header from './Header';
 import Item from './Item';
 import AddItemForm from './AddItemForm';
 
 class App extends Component {
 
+  //items need state because their value will change
 
   constructor(){
     super();
@@ -12,7 +14,8 @@ class App extends Component {
       items: []
     };
   }
-
+  
+  //keeps track of previous items in list
   prevItemId = 0;
 
   // componentDidMount() {
@@ -27,6 +30,7 @@ class App extends Component {
 
   // }
 
+  //adds item to items array in state object
   handleAddItem = (name) => {
     this.setState( prevState => {
       return {
@@ -42,6 +46,7 @@ class App extends Component {
     });
   }
 
+  //removes item from items state object array
   handleRemoveItem = (id) => {
     console.log("item removed ", id);
     this.setState( prevState => {
@@ -54,6 +59,9 @@ class App extends Component {
   render() {
     return (
       <div className="main-container">
+      <Navigation />
+
+      {/* Header Component */}
         <Header 
           title="FOOD LIST"
           items={this.state.items}
@@ -71,7 +79,7 @@ class App extends Component {
 
         />
       )}
-
+        {/* AddItemForm Component */}
         <AddItemForm
           addItem={this.handleAddItem}
         />

@@ -8,17 +8,25 @@ input {
 
 li {
   list-style: none;
+  margin: auto;
 }
+
 /* Class Styles */
 
-.container {
+.container,
+.container-item {
   display: flex;
-  justify-content: space-between;
-  border: solid black 1px;
+  justify-content: space-around;
   margin: auto;
   padding: 2px;
   width: 75%;
+  border-radius: 5px;
 }
+
+.container {
+  border: solid black 1px;
+}
+
 
 .list-title {
   text-align: center;
@@ -30,3 +38,19 @@ li {
   text-align: center;
 }
 
+.nav-container {
+  background: lightslategrey;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 10vh;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 800px) {
+  container-item {
+    width: 20%;
+  }
+}
