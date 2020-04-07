@@ -10,8 +10,7 @@ class GroceryList extends Component {
   constructor(){
     super();
     this.state={
-      items: [],
-      prices: []
+      items: []
     };
   }
   

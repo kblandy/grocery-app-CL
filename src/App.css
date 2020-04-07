@@ -45,6 +45,8 @@ li {
   flex-direction: row;
   justify-content: space-evenly;
   height: 10vh;
+  width: 100vw;
+  margin: auto;
 }
 
 /* MEDIA QUERIES */
