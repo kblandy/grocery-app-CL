@@ -25,5 +25,6 @@ Fetch data from APIs and ensure that it is being rendered properly in the correc
 
 Manage user experience by cleaning up front end and making it look simple, modern, and beautiful (make it work first, then make it beautiful!) (week?+)
 
-Requirements to run the project
+Requirements to run the project:
+
 npm install and run React application
