@@ -1,0 +1,32 @@
+/* Element styles */
+
+input {
+  padding: 2px;
+  margin: 2px;
+}
+
+
+li {
+  list-style: none;
+}
+/* Class Styles */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  border: solid black 1px;
+  margin: auto;
+  padding: 2px;
+  width: 75%;
+}
+
+.list-title {
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
