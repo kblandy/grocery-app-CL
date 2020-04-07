@@ -27,7 +27,3 @@ Manage user experience by cleaning up front end and making it look simple, moder
 
 Requirements to run the project
 npm install and run React application
-
-Bootstrap
-
-React-bootstrap (depending on time, I may modify this, because I do find stylization limiting with react-bootstrap)
