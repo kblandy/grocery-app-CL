@@ -8,25 +8,34 @@ input {
 
 li {
   list-style: none;
-  margin: auto;
+  margin: 5px;
 }
 
 /* Class Styles */
 
 .container,
-.container-item {
+.nav-container {
   display: flex;
-  justify-content: space-around;
   margin: auto;
   padding: 2px;
-  width: 75%;
-  border-radius: 5px;
+
+
 }
 
 .container {
   border: solid black 1px;
+  justify-content: space-evenly;
+  width: 75%;
 }
 
+.container-item {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  margin: auto;
+  padding: 10px;
+}
 
 .list-title {
   text-align: center;
@@ -36,17 +45,22 @@ li {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: auto;
+}
+
+.main-page {
+  width: 65vw;
+  margin: auto;
 }
 
 .nav-container {
   background: lightslategrey;
   color: white;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 10vh;
-  width: 100vw;
-  margin: auto;
+  width: 75%;
+
 }
 
 /* MEDIA QUERIES */

@@ -28,3 +28,5 @@ Manage user experience by cleaning up front end and making it look simple, moder
 Requirements to run the project:
 
 npm install and run React application
+
+BrowserRouter and Route: npm install --save react-router-dom

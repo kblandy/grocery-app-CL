@@ -6,11 +6,19 @@ class Item extends Component {
         return(
             <div className="container">
                 <ul className="container-item">
-                {this.props.name}{this.props.id}
+                    <li>
+                    {this.props.name}
+                    </li>
+
+                    <li>
+                    {this.props.id}
+                    </li>
                     {/* <li><h3>{this.props.id}</h3></li>
                     <li><h3>{this.props.name}</h3></li>
                     <li><h3>{this.props.price}</h3></li> */}
-                    <button onClick={ () => this.props.removeItem(this.props.id) }> x </button>
+                    <li>
+                        <button onClick={ () => this.props.removeItem(this.props.id) }> x </button>
+                    </li>
                 </ul>
             </div>
         );
@@ -18,5 +26,3 @@ class Item extends Component {
 };
 
 export default Item;
-
-//note, not recognizing id or removeItem in button onClick function
