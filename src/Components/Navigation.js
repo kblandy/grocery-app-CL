@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Navigation extends Component {
     render() {
         return (
             <ul className="nav-container">
-                <li>Home</li>
-                <li>New List</li>
-                <li>My Lists</li>
+                <li><Link to="/home">Home</Link></li>
+                <li><Link to="/newlist">New List</Link></li>
+                <li><Link to="/newlist">My Lists</Link></li>
             </ul>
         );
     }
