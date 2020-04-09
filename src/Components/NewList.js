@@ -3,31 +3,36 @@ import GroceryList from './GroceryList';
 
 class NewList extends Component {
 
-    // //array to collect user's newList info
-    // userData = [];
-
     constructor(props) {
         super(props);
 
         this.state = {
-            userListName: '',
-            userListZipcode: '',
-            userListDate: ''
+            user:
+            {
+                userListName: '',
+                userListZipcode: '',
+                userListDate: ''
+            }
+
         }
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-    }
+    };
 
     //target is the input field, selected by input attribute 'name'
     handleChange = ({ target }) => {
-        this.setState({
-            [target.name]: target.value
-        });
+        this.setState((prevState) => ({
+            user: {
+                ...prevState.user,
+                [target.name]: target.value
+            }
+        }));
 
         //stores values to localStorage
         localStorage.setItem(target.name, target.value);
         // userData.push(target.name, target.value);
+        // console.log(userData);
 
     };
 
@@ -41,9 +46,9 @@ class NewList extends Component {
             return (
                 //groceryList should have props from userinput state!
                 <GroceryList 
-                    title={this.state.userListName}
-                    location={this.state.userListZipcode}
-                    date={this.state.userListName}
+                    // title={this.state.userListName}
+                    // location={this.state.userListZipcode}
+                    // date={this.state.userListName}
                 />
             );
         };
@@ -76,7 +81,7 @@ class NewList extends Component {
                     <input 
                         type="text" 
                         name="userListName"
-                        value={this.state.userListName} 
+                        value={this.state.user.userListName} 
                         onChange={this.handleChange} 
                         id="user-list-name" 
                         placeholder="Name your List" />
@@ -84,7 +89,7 @@ class NewList extends Component {
                     <input 
                         type="text" 
                         name="userListZipcode"
-                        value={this.state.userListZipcode}
+                        value={this.state.user.userListZipcode}
                         onChange={this.handleChange}
                         id="user-list-zip" 
                         placeholder="Enter zip" />
@@ -92,7 +97,7 @@ class NewList extends Component {
                     <input 
                         type="text" 
                         name="userListDate"
-                        value={this.state.userListDate}
+                        value={this.state.user.userListDate}
                         onChange={this.handleChange}
                         id="user-list-date" 
                         placeholder="Date" />
@@ -105,5 +110,12 @@ class NewList extends Component {
         );
     }
 };
+
+// //array to collect user's newList info
+var userData = [];
+
+// var data_on_LS = localStorage.getItem('userListName', 'userListZipcode', 'userListDate');
+
+// userData.push(data_on_LS);
 
 export default NewList;
