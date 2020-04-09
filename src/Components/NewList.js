@@ -4,10 +4,11 @@ import GroceryList from './GroceryList';
 class NewList extends Component {
 
     // //array to collect user's newList info
-    // userData = [''];
+    // userData = [];
 
     constructor(props) {
         super(props);
+
         this.state = {
             userListName: '',
             userListZipcode: '',
@@ -26,6 +27,7 @@ class NewList extends Component {
 
         //stores values to localStorage
         localStorage.setItem(target.name, target.value);
+        // userData.push(target.name, target.value);
 
     };
 
