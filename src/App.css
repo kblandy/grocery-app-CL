@@ -3,6 +3,15 @@
 a {
   text-decoration: none;
   color: white;
+  margin: auto;
+}
+
+button {
+  color: white;
+  background: lightslategrey;
+  padding: 5px;
+  border-radius: 6px;
+  border: solid black 1px;
 }
 
 input {
@@ -15,6 +24,10 @@ input {
 li {
   list-style: none;
   margin: 5px;
+}
+
+p {
+  text-align: justify;
 }
 
 /* Class Styles */
@@ -59,6 +72,7 @@ li {
 .main-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   margin: auto;
 }
@@ -66,6 +80,7 @@ li {
 .main-page {
   width: 65vw;
   margin: auto;
+  text-align: center;
 }
 
 .nav-container {

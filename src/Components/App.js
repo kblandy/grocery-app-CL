@@ -22,12 +22,13 @@ class App extends Component {
         <BrowserRouter>
 
           <Route path="/" component={Navigation} />
-          <Route exact path="/home" component={Home} />
+          <Route path="/home" component={Home} />
           <Route exact path="/newlist" component={() => 
                   <NewList 
                     title="Create New List" 
                     subtitle="Fill out the info below to create a new list"
                     userList={this.state}
+                    // createList={this.handleCreateList}
                     />} />
           <Route exact path="/mylists" component={GroceryList} />
 

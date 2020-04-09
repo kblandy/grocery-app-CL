@@ -60,7 +60,7 @@ class GroceryList extends Component {
             <div>
                 {/* Header Component */}
                 <Header 
-                title="Human Food List"
+                title={"Human Food List"}
                 items={this.state.items}
                 // items={this.state.items} 
                 />
