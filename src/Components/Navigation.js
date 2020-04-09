@@ -7,7 +7,7 @@ class Navigation extends Component {
             <ul className="nav-container">
                 <li><Link to="/home">Home</Link></li>
                 <li><Link to="/newlist">New List</Link></li>
-                <li><Link to="/newlist">My Lists</Link></li>
+                <li><Link to="/mylists">My Lists</Link></li>
             </ul>
         );
     }

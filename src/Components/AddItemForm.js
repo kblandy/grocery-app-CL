@@ -4,8 +4,8 @@ class AddItemForm extends Component {
     
     userInput = React.createRef();
 
-    handleSubmit = (e) => {
-        e.preventDefault();
+    handleSubmit = (event) => {
+        event.preventDefault();
     }
 
     render() {

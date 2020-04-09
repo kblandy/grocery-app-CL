@@ -6,8 +6,9 @@ a {
 }
 
 input {
-  padding: 2px;
+  padding: 10px;
   margin: 2px;
+  text-align: center;
 }
 
 
@@ -42,6 +43,15 @@ li {
   padding: 10px;
 }
 
+.container-new-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  border: solid black 1px;
+}
+
 .list-title {
   text-align: center;
 }
@@ -66,6 +76,13 @@ li {
   height: 10vh;
   width: 75%;
 
+}
+
+/*ID Styles*/
+
+#button-new-list {
+  width: 20%;
+  margin: auto;
 }
 
 /* MEDIA QUERIES */
