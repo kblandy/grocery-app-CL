@@ -27,7 +27,7 @@ class App extends Component {
                   <NewList 
                     title="Create New List" 
                     subtitle="Fill out the info below to create a new list"
-                    userList={this.state}
+                    // userList={this.userList}
                     // createList={this.handleCreateList}
                     />} />
           <Route exact path="/mylists" component={GroceryList} />

@@ -14,6 +14,7 @@ class AddItemForm extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <input type="text" ref={this.userInput} placeholder="Type an Item" />
                     <button onClick={ () => this.props.addItem(this.props.name)}>Add an Item</button>
+                    <button onClick={(localStorage.clear())}>Clear Data</button>
                 </form>
             </div>
         );

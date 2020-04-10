@@ -55,14 +55,21 @@ class GroceryList extends Component {
     });
   }
 
+  getLocalStorageData = (dataItem) => {
+    let userListItem = localStorage.getItem(dataItem);
+    console.log(userListItem);
+}
+
     render() {
         return (
             <div>
                 {/* Header Component */}
                 <Header 
-                title={"Human Food List"}
+                title={localStorage.getItem('userListName')}
+                location={localStorage.getItem('userListZipcode')}
+                date={localStorage.getItem('userListDate')}
                 items={this.state.items}
-                // items={this.state.items} 
+ 
                 />
 
                 {/* Items List */}

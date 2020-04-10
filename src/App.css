@@ -32,13 +32,17 @@ p {
 
 /* Class Styles */
 
+/* .button-new-list {
+  color: black;
+  width: 20%;
+  margin: auto;
+} */
+
 .container,
 .nav-container {
   display: flex;
   margin: auto;
   padding: 2px;
-
-
 }
 
 .container {
@@ -93,12 +97,16 @@ p {
 
 }
 
+/* .new-list-button {
+  color: white;
+  background: lightslategrey;
+  border: solid black 1px;
+  padding: 6px;
+} */
+
 /*ID Styles*/
 
-#button-new-list {
-  width: 20%;
-  margin: auto;
-}
+
 
 /* MEDIA QUERIES */
 
