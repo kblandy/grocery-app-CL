@@ -1,38 +1,8 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import SearchList from './SearchList';
 
 
 class AddItemForm extends Component {
-
-    constructor() {
-        super();
-        this.state = {
-            inputValue: [],
-            searchItems: {
-                itemName: '',
-                itemImg: '',
-            },
-            loaded: false
-        }
-    }
-
-        // userInput = React.createRef();
-
-    componentDidMount() {
-        axios.get('https://api.edamam.com/api/food-database/parser?ingr=apple&page=0&app_id=f0d6df51&app_key=da585cc03d43164f5e94d2df90eefbde')
-            .then(response => {
-                const data = response.data;
-                this.setState({
-                    searchItems: {
-                        itemName: data.parsed[0].food.label,
-                        itemImg: data.parsed[0].food.image
-                    }
-            
-                })
-            });
-            
-    };
 
     handleSubmit = (event) => {
         event.preventDefault();
@@ -45,18 +15,32 @@ class AddItemForm extends Component {
 
 
     handleChange = (event) => {
+        event.preventDefault();
         this.setState({
             inputValue: event.target.value
         })
     };
+    
 
     render() {
         return (
-            <div className="container">
-                <form onSubmit={this.handleSubmit}>
-                    <input type="text" placeholder="Type an Item" onChange={this.handleChange}/>
-                    <button onClick={this.handleSubmit}>Search</button>
+            <div>
+            <div className="container-item">
+            <form>
+                    <input onChange={this.handleSubmit} type="text" placeholder="Type an Item"/>
+                    <button onClick={this.handleChange}>Search</button>
                 </form>
+
+            </div>
+            <div className="search-results-container">
+                <SearchList 
+
+                />
+                {/* <SearchList 
+                    result-name={this.state.searchItems.itemName}
+                    result-image={this.state.searchItems.itemImage}
+                /> */}
+                </div>
             </div>
         );
     }

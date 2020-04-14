@@ -5,9 +5,10 @@ class SearchListItem extends Component {
         return(
             <div>
                 <li>
-                    <h4>{this.props.image}</h4>
-                    <h4>{this.props.name}</h4>
+                <h3>{this.props.name}</h3>
+                <img src={this.props.image} />
                 </li>
+                <button>Add!</button>
             </div>
         )
 
@@ -15,3 +16,4 @@ class SearchListItem extends Component {
 };
 
 export default SearchListItem;
+
