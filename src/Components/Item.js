@@ -26,3 +26,6 @@ class Item extends Component {
 };
 
 export default Item;
+
+// addItem button should be on items rendered from API request
+{/* <button onClick={ () => this.props.addItem(this.props.name)}>Add an Item</button> */}

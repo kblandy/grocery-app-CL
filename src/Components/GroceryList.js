@@ -7,7 +7,7 @@ class GroceryList extends Component {
 
     //items need state because their value will change
 
-  constructor(){
+  constructor() {
     super();
     this.state = {
       items: []
@@ -17,18 +17,6 @@ class GroceryList extends Component {
   //keeps track of previous items in list
   prevItemId = 0;
 
-  // componentDidMount() {
-  //   fetch('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
-  //     .then(response => response.json())
-  //     .then(responseData => {
-  //       this.setState({ items: responseData.data });
-  //     })
-  //     .catch(error => {
-  //       console.log('Error fetching and parsing data: ', error)
-  //     });
-
-  // }
-
   //adds item to items array in state object
   handleAddItem = (name) => {
     this.setState( prevState => {
@@ -37,7 +25,6 @@ class GroceryList extends Component {
           ...prevState.items,
           {
             name,
-            price: '$',
             id: this.prevItemId += 1
           }
         ]
@@ -55,12 +42,8 @@ class GroceryList extends Component {
     });
   }
 
-  getLocalStorageData = (dataItem) => {
-    let userListItem = localStorage.getItem(dataItem);
-    console.log(userListItem);
-}
-
     render() {
+      console.log(this.state.items);
         return (
             <div>
                 {/* Header Component */}
@@ -69,7 +52,6 @@ class GroceryList extends Component {
                 location={localStorage.getItem('userListZipcode')}
                 date={localStorage.getItem('userListDate')}
                 items={this.state.items}
- 
                 />
 
                 {/* Items List */}
@@ -78,12 +60,11 @@ class GroceryList extends Component {
                     <Item 
                     id={item.id}
                     name="item"
-                    price="$--" 
                     key={item.id}
                     index={index}
                     removeItem={this.handleRemoveItem}
-
                     />
+
                 )}
                     {/* AddItemForm Component */}
                     <AddItemForm

@@ -47,3 +47,35 @@
   //     };
   //   });
   // }
+
+  
+    // handleShowItems() {
+    //     this.showItems();
+    // };
+
+    // showItems() {
+    //     if (this.state.loaded) {
+    //         return (
+
+    //             <div className="container">
+    //                 <form onSubmit={this.handleSubmit}>
+    //                     <input 
+    //                         type="text" 
+    //                         placeholder="Type an Item" 
+    //                         value={this.state.searchItems}
+    //                         onChange={this.handleChange}
+
+    //                         />
+    //                     <button onClick={this.handleChange}>Search</button>
+    //                 </form>
+    
+    //                 <div>
+    //                     <SearchList 
+    //                         data={this.state.input}
+    //                         showData={this.showItems}
+    //                     />
+    //                 </div>
+    //             </div>
+    //         )
+    //     }
+    // };
