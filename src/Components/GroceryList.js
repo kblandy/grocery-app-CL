@@ -10,7 +10,8 @@ class GroceryList extends Component {
   constructor() {
     super();
     this.state = {
-      items: []
+      items: [],
+      searchValue: ''
     };
   }
   
@@ -68,7 +69,8 @@ class GroceryList extends Component {
                 )}
                     {/* AddItemForm Component */}
                     <AddItemForm
-                    addItem={this.handleAddItem}
+                    //now the search value can be retrieved for functions
+                      searchValue={localStorage.getItem('inputValue')}
                     />
             </div>
             

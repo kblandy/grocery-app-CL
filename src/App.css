@@ -46,11 +46,11 @@ p {
 
 /* Class Styles */
 
-/* .button-new-list {
-  color: black;
-  width: 20%;
-  margin: auto;
-} */
+.add-button {
+  height: 10%;
+  width: auto;
+  align-self: center;
+}
 
 .container,
 .nav-container {
@@ -70,7 +70,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   margin: auto;
-  padding: 10px;
+
 }
 
 .container-new-list {
@@ -80,6 +80,10 @@ p {
   width: 300px;
   margin: auto;
   border: solid black 1px;
+}
+/* hides searchlist div */
+.hidden-container {
+  display: none;
 }
 
 .list-title {
@@ -117,7 +121,6 @@ p {
   width: 25%;
   border: solid black 1px;
   margin: auto;
-  padding: 10px
 }
 
 /* .new-list-button {

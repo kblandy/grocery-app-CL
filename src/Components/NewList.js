@@ -22,16 +22,6 @@ class NewList extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     };
 
-    componentDidMount() {
-        console.log("NewList Mounted!");
-    };
-
-    //remove NewList component
-    componentWillUnmount() {
-        // let newListForm = document.getElementById('create-new-list-form');
-        // newListForm.remove(newListForm);
-        console.log("Newlist Unmounted!");
-    };
 
     //target is the input field, selected by input attribute 'name'
     handleChange = ({ target }) => {
@@ -56,27 +46,6 @@ class NewList extends Component {
         this.setState({
             submitted: true
         });
-
-        this.createNewList();
-    };
-
-    // handleCreateNewList = () => {
-    //     console.log('new list created!');
-
-    //         return (
-    //             //groceryList should have props from userinput state!
-    //             <GroceryList 
-    //                 // title={this.state.userListName}
-    //                 // location={this.state.userListZipcode}
-    //                 // date={this.state.userListName}
-    //             />
-    //         );
-    //     };
-
-    createNewList() {
-        if (this.state.submitted) {
-            console.log("Incorrectly Unmounted");
-        };
     };
 
     render() {
