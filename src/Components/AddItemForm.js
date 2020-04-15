@@ -32,7 +32,7 @@ class AddItemForm extends Component {
                 </form>
 
             </div>
-            <div className="search-results-container">
+            <div>
                 <SearchList 
 
                 />

@@ -15,7 +15,6 @@ button {
 }
 
 h3 {
-  align-self: center;
   padding: 5px;
   font-family: 'Tangerine', cursive;
   font-size: 40px;
@@ -25,6 +24,7 @@ h3 {
 img {
   width: 20vh;
   height: auto;
+  padding: 30px;
 
 }
 
@@ -68,7 +68,6 @@ p {
 .container-item {
   display: flex;
   flex-direction: row;
-
   justify-content: space-around;
   margin: auto;
   padding: 10px;

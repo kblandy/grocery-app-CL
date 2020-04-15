@@ -33,9 +33,10 @@ class SearchList extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container-item">
+
                 {this.state.searchItems.map((item, index) =>
-                <div key={index}>
+                <div className="container-item" key={index}>
                 <h3>{item.itemName}</h3>
                 <img src={item.itemImage} />
                 </div>
