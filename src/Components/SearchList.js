@@ -19,7 +19,7 @@ class SearchList extends Component {
 
     componentDidMount() {
 
-        let request = axios.get(`https://api.edamam.com/api/food-database/parser?ingr=${this.props.searchValue}input}&page=0&app_id=f0d6df51&app_key=da585cc03d43164f5e94d2df90eefbde`);
+        let request = axios.get(`https://api.edamam.com/api/food-database/parser?ingr=${this.props.searchValue}&page=0&app_id=f0d6df51&app_key=da585cc03d43164f5e94d2df90eefbde`);
 
         request.then(response => {
             const data = response.data;
