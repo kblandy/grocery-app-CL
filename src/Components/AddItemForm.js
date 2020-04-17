@@ -69,25 +69,26 @@ class AddItemForm extends Component {
             return (
                 <div>
                 <div className="container-item">
-                <form>
+                    <form>
                         <input 
                             type="text" 
                             name="inputValue" 
                             onChange={this.handleChange} 
                             placeholder="Type an Item"
                         />
-    
+        
                         <button onClick={this.handleSubmit}>Search</button>
-                        
+                            
                     </form>
                 </div>
-    
-                    
+
+{/* SearchList Component */}
                 <div>
+
                     <SearchList
-                        
+                        searchValue={this.state.inputValue}
                     />
-    
+
                 </div>
                 </div>
             );
