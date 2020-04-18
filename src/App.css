@@ -136,7 +136,9 @@ p {
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 800px) {
-  container-item {
+
+  .container-item {
     width: 20%;
   }
 }
+
