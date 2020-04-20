@@ -27,6 +27,7 @@ class AddItemForm extends Component {
 
       //logs the user's value object
       console.log(this.state.inputValue);
+
     };
 
     handleChange = (input) => {
@@ -77,7 +78,10 @@ class AddItemForm extends Component {
             </div>
             {/* SearchList Component */}
             <div>
-              <SearchList searchValue={this.state.inputValue} />
+              <SearchList 
+                searchValue={this.state.inputValue}
+                addItem={this.props.addItem}
+               />
             </div>
           </div>
         );

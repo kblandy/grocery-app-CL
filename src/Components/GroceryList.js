@@ -10,6 +10,7 @@ class GroceryList extends Component {
   constructor() {
     super();
     this.state = {
+      //empty array to hold the items user adds from SearchList
       items: [],
       searchValue: ''
     };
@@ -19,14 +20,15 @@ class GroceryList extends Component {
   prevItemId = 0;
 
   //adds item to items array in state object
-  handleAddItem = (name) => {
+  handleAddItem = (name, image) => {
     this.setState( prevState => {
       return {
         items: [
           ...prevState.items,
           {
-            name,
-            id: this.prevItemId += 1
+            name: name,
+            id: this.prevItemId += 1,
+            image: image
           }
         ]
       }
@@ -60,7 +62,8 @@ class GroceryList extends Component {
 
                     <Item 
                     id={item.id}
-                    name="item"
+                    name={item.name}
+                    image={item.image}
                     key={item.id}
                     index={index}
                     removeItem={this.handleRemoveItem}
@@ -70,7 +73,8 @@ class GroceryList extends Component {
                     {/* AddItemForm Component */}
                     <AddItemForm
                     //now the search value can be retrieved for functions
-                      searchValue={localStorage.getItem('inputValue')}
+                      // searchValue={localStorage.getItem('inputValue')}
+                      addItem={this.handleAddItem}
                     />
             </div>
             

@@ -81,6 +81,7 @@ class NewList extends Component {
                         placeholder="Date" />
 
                     <button
+                    //route, onclick will reroute to mylists tab
                         onChange={this.handleSubmit}><Link to="/mylists"><h4>Submit</h4></Link></button>
 
                         

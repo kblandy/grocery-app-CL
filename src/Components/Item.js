@@ -11,7 +11,7 @@ class Item extends Component {
                     </li>
 
                     <li>
-                    {this.props.id}
+                    <img src={this.props.image} alt={this.props.name}/>
                     </li>
                     {/* <li><h3>{this.props.id}</h3></li>
                     <li><h3>{this.props.name}</h3></li>
