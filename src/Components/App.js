@@ -22,7 +22,11 @@ class App extends Component {
         <BrowserRouter>
 
           <Route path="/" component={Navigation} />
-          <Route path="/home" component={Home} />
+          <Route path="/home" component={() =>
+                  <Home
+                    title="Doubleplus Shop List" 
+                    covidHeader="COVID-19 Stats"
+                  />} />
           <Route exact path="/newlist" component={() => 
                   <NewList 
                     title="Create New List" 

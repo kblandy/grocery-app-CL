@@ -131,7 +131,9 @@ p {
 
 /*ID Styles*/
 
-
+#covid19-stats {
+  border: 1px solid black;
+}
 
 /* MEDIA QUERIES */
 

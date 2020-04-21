@@ -12,10 +12,11 @@ class SearchList extends Component {
     constructor() {
         super();
         this.state = {
+            loaded: false,
             //items searched here
             searchItems: [],
-            loaded: false,
-            buttonClicked: false
+            addItem: false,
+            searchCleared: false
         }
     }
 
@@ -34,44 +35,67 @@ class SearchList extends Component {
         
             })
         })
-            .catch(error => alert('There was an error processing: ', error));
+            .catch(error => alert('There was an error processing. Reload page and try another search: ', error));
     }
             
     handleClick(name, image) {
         this.props.addItem(name, image);
 
         this.setState({
-            buttonClicked: true
+            addItem: true
         })
 
         //addItem function from AddItem form should go here; callback!
         console.log('add item button has been clicked');
-        clearInterval();
     };
 
+    //sets the clearButton state to false so that program can cycle through again
+    handleClearSearch() {
+
+        this.setState({
+            searchCleared: true
+        })
+
+    };
+    
+
     render() {
+        console.log("current state is: ", this.state.searchCleared);
 
         var { loaded, searchItems } = this.state;
 
         if(!loaded) {
             return <div>Loading...</div>;
         }
-        else {
-            return (
+        if(loaded) {
 
-                <div className="search-results-container" id="searchlist-div">
+            if(this.state.searchCleared === true) {
 
-                {/* loops through api requested item and displays its name and image */}
-                    {searchItems.map((searchItem, index) =>
-                        <div className="container-item" key={index}>
-                            <h3>{searchItem.itemName}</h3>
-                            <img src={searchItem.itemImage} alt="" />
-                            <button onClick={() => {this.handleClick(searchItem.itemName, searchItem.itemImage)}}className="add-button">Add item!</button>
-                        </div>
-                    )}
-                </div>
-            );   
-        }
+                return (
+                    null
+
+                )
+
+            } else {
+                return (
+
+                    <div className="search-results-container" id="searchlist-div">
+    
+                    {/* loops through api requested item and displays its name and image */}
+                        {searchItems.map((searchItem, index) =>
+                            <div className="container-item" key={index}>
+                                <h3>{searchItem.itemName}</h3>
+                                <img src={searchItem.itemImage} alt="" />
+                                <button onClick={() => {this.handleClick(searchItem.itemName, searchItem.itemImage)}} className="add-button">Add item!</button>
+                                <button onClick={() => {this.handleClearSearch()}}className="add-button">Reset</button>
+                            </div>
+                        )}
+                    </div>
+                );   
+            }
+            
+        };
+        
     };
 };
 

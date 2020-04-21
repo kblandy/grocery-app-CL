@@ -38,7 +38,7 @@ class AddItemForm extends Component {
         }
       },
         () => localStorage.setItem("input", this.state.inputValue));
-      ;
+      
     };
 
 
