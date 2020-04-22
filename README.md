@@ -30,3 +30,9 @@ Requirements to run the project:
 npm install and run React application
 
 BrowserRouter and Route: npm install --save react-router-dom
+
+APIS used:
+
+Edamam food database => (api key and id required)
+Coronavirus Data API (thevirustracker.com) => (no api key required!)
+OpenWeather => (api key required)
