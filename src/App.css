@@ -21,6 +21,13 @@ h3 {
   letter-spacing: 4px;
 }
 
+h4 {
+  margin: 0;
+  padding: 4px;
+  font-weight: bolder;
+}
+
+
 img {
   width: 95%;
   height: auto;
@@ -41,7 +48,10 @@ li {
 }
 
 p {
-  text-align: justify;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  padding: 4px;
 }
 
 /* Class Styles */
@@ -53,7 +63,7 @@ p {
 }
 
 .container,
-.nav-container {
+.nav-container{
   display: flex;
   margin: auto;
   padding: 2px;
@@ -63,6 +73,13 @@ p {
   border: solid black 1px;
   justify-content: space-evenly;
   width: 75%;
+}
+
+.container-covid-stats {
+  border: 1px solid black;
+  width: 280px;
+  height: auto;
+  margin: auto;
 }
 
 .container-item {
@@ -80,9 +97,43 @@ p {
   margin: auto;
   border: solid black 1px;
 }
+
+.covid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-around;
+  margin: auto;
+  padding: 2px;
+  width: 50%;
+
+}
+
+.covid-header {
+  font-size: 25px;
+  text-decoration: underline;
+  margin: 10px;
+}
+
+.covid-title {
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.covid-stat {
+  color: maroon;
+  font-size: 20px;
+  letter-spacing: 3px;
+  align-self: center;
+}
+
 /* hides searchlist div */
 .hidden-container {
   display: none;
+}
+
+.link-credit {
+  color: black;
 }
 
 .list-title {
@@ -98,6 +149,8 @@ p {
 }
 
 .main-page {
+  display: flex;
+  flex-direction: column;
   width: 65vw;
   margin: auto;
   text-align: center;
@@ -122,18 +175,22 @@ p {
   margin: auto;
 }
 
-/* .new-list-button {
-  color: white;
-  background: lightslategrey;
-  border: solid black 1px;
-  padding: 6px;
-} */
+
+.span-covid-global,
+.span-covid-deaths {
+
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 
 /*ID Styles*/
 
-#covid19-stats {
-  border: 1px solid black;
-}
+
 
 /* MEDIA QUERIES */
 

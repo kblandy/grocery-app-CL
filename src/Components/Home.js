@@ -1,84 +1,37 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import CovidStats from './CovidStats';
+import WeatherBoard from './WeatherBoard';
 
 class Home extends Component {
     
-    constructor() {
-        super();
-        this.state = {
-            loaded: false,
-            covidStats: []
-        }
-    };
-
-    componentDidMount() {
-        let request = axios.get('https://thevirustracker.com/free-api?global=stats');
-
-        request.then(response => {
-            const data = response.data;
-            console.dir(data);
-            this.setState({
-                loaded: true,
-                covidStats: [{
-                    totalGlobalCases: data.results[0].total_cases,
-                    totalDeaths: data.results[0].total_deaths,
-                    totalNewCasesToday: data.results[0].total_new_cases_today,
-                    totalNewDeathsToday: data.results[0].total_new_deaths_today
-                }]
-            })
-        })
-            .catch(error => alert('There was an error Processing: ', error));
-    }
-
     render() {
-        if(this.state.loaded) {
             return (
                 <div className="main-page">
-                    <h2>{this.props.title}</h2>
-    
-                    {/* Covid-19 statistic chart */}
-                    <div id="covid19-stats">
-                    <h3>{this.props.covidHeader}</h3>
-                        <h4>Total Global Cases: {this.state.covidStats[0].totalGlobalCases}</h4>
-                        <h4>Total Global Deaths: {this.state.covidStats[0].totalDeaths}</h4>
-                        <h4>Total New Cases Today: {this.state.covidStats[0].totalNewCasesToday}</h4>
-                        <h4>Total New Deaths Today: {this.state.covidStats[0].totalNewDeathsToday}</h4>
+                    <WeatherBoard />
+                    <h3>{this.props.title}</h3>
 
+                    <div className="secondary-content">
+                        <div>
+                            <p>
+                            Mind your own goddamn business, Gene! I'm having a conversation with my mother here! Kissing Rick's ass isn't gonna make him stay, Mom, but it will help you lose everyone else. It's fine, everythings is fine. theres an infinite number of realities Morty, and in a few--
+                            </p>
+                            <h4>
+                            To create a new list, click the button below!
+                            </h4>
+                            <button><Link to="/newList" >New List</Link></button>
+                        </div>
                     </div>
-    
-                    <p>
-                    Caila tasar fum et. Sa quí anna ettelen, ya avá raica queni, et quí latin nénar orpano.Inqua indómë nar nú, lá fëa yalúmëa tanwëataquë. Yarra lingwë yernacolla ara oi. Norcé caila linwelë silninquita, oi roina tengwo yén. Soron nirya hahta ta axa, lár orvamittanya caimasan sá, nulda nimba ana et. Arca sanga tanwëataquë sí rip
-                    </p>
-                    <h4>
-                    To create a new list, click the button below!
-                    </h4>
-                    <button><Link to="/newList" >New List</Link></button>
-              </div>
-            );
-        } else {
-            return (
-                <div className="main-page">
-                    <h2>{this.props.title}</h2>
-                    <div><h4>Loading COVID-19 data...</h4></div>
-
-                    <p>
-                    Caila tasar fum et. Sa quí anna ettelen, ya avá raica queni, et quí latin nénar orpano.Inqua indómë nar nú, lá fëa yalúmëa tanwëataquë. Yarra lingwë yernacolla ara oi. Norcé caila linwelë silninquita, oi roina tengwo yén. Soron nirya hahta ta axa, lár orvamittanya caimasan sá, nulda nimba ana et. Arca sanga tanwëataquë sí rip
-                    </p>
-                    <h4>
-                    To create a new list, click the button below!
-                    </h4>
-                    <button><Link to="/newList" >New List</Link></button>
-                </div>
+                    {/* CovidStats Component */}
+                    <div className="container-item">
+                        <CovidStats 
+                                title="Covid-19 Stats"
+                            />
+                    </div>
+                        
+                </div>       
             )
-            
-
-        }
-
-        
     }
-
-        
 };
 
 export default Home;
