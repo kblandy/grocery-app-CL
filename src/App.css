@@ -11,23 +11,40 @@ a {
   font-size: 18px;
 }
 
+a:hover {
+  color: maroon;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
 body {
+  background-image: url('./Images/paper.jpg');
   text-align: center;
   margin: auto;
 }
 
 footer {
+  font-family: 'Aldrich', sans-serif;
+  font-weight: bolder;
+  font-size: 10px;
+  letter-spacing: 2px;
   padding: 10px;
+  text-transform: uppercase;
 }
 
 h5 {
+  font-family: 'Cinzel', serif;
   font-weight: lighter;
 }
 
 
 h6 {
+  font-family: 'Aldrich', sans-serif;
   font-weight: lighter;
   font-size: 18px;
+  padding-top: 2px;
 }
 
 img {
@@ -43,48 +60,96 @@ li {
 }
 
 p {
-  font-size: 15px;
-  line-height: 2em;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+  line-height: 1.5em;
+  letter-spacing: 3px;
   text-align: justify;
-  padding-top: 5px;
+  padding-top: 10px;
+  text-transform: uppercase;
 }
 
 ul {
   list-style-type: none;
+  background: transparent;
+}
+
+.navbar.container {
+  background: transparent;
+}
+
+.nav-link {
+  text-decoration: none;
 }
 
 /* CLASS STYLES */
 
 .button-create-list {
-  border: 1px solid black;
-  background-color: rgb(240, 238, 238);
   padding: 4px 9px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 2px;
-  border-radius: 75px;
 }
 
 .container {
   padding: 1px;
   width: 100%;
+  background: transparent;
+}
+
+.container-covid-stats {
+  border: black solid 1px;
+  margin: auto;
+  padding: 20px;
 }
 
 .covid-stat {
   color: maroon;
 }
 
-.covid-header {
-  letter-spacing: 6px;
-  font-size: 18px;
-  font-weight: bold;
+.covid-stat-border {
+  border: black solid 1px;
+  padding: 2px;
+  width: 290px;
+  margin: auto;
 }
 
-.div-fix-collapse {
-  margin-top: 50px;
+.covid-header {
+  text-align: center;
+  border: black solid 1px;
+  border-radius: 5px;
+  font-family: 'Special Elite', cursive;
+  letter-spacing: 7px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
 }
+
+.covid-stat {
+  font-family: 'Special Elite', cursive;
+  font-weight: bolder;
+}
+
+.covid-title {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+  line-height: 1.5em;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+
+/* .div-fix-collapse {
+  margin-top: 50px;
+} */
 
 .flex-div-row {
   display: flex;
@@ -96,38 +161,59 @@ ul {
   flex-direction: column;
 }
 
+
 .link-credit {
   color: black;
   font-size: 15px;
 }
 
-.nav-link {
-  color: black;
-}
-
 .navbar {
+  background: transparent;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: white;
   padding: 2px;
-  position: fixed;
   margin: auto;
   width: 100%;
+  border-bottom-style: double;
 }
+.nav-header {
+  background: transparent;
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 55px;
+  letter-spacing: 3px;
+  padding: 10px;
+  border-bottom-style: double;
+}
+
+.nav-link {
+  color: black;
+  font-family: 'Cinzel', serif;
+}
+
+.virus-tracker-credit {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
 
 /* ID STYLES */
 
 #weather-header {
+  font-family: 'Cinzel', serif;
   padding: 10px;
   letter-spacing: 1px;
+  border-bottom: 1px black dashed;
 }
 
 #root {
   padding: 1px;
   margin-top: 0;
 }
-
 
 
 /* MEDIA QUERIES */

@@ -38,7 +38,7 @@ class WeatherBoard extends Component {
             return (
                 <div id="weather-header">
 
-                {capitalizedWeather} in {this.state.weatherStats[0].name} today!
+                {capitalizedWeather} in {this.state.weatherStats[0].name} 
                 
                 </div>
             )

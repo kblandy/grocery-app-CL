@@ -11,16 +11,13 @@ class Home extends Component {
             return (
                 <div className="div-fix-collapse">
                     <WeatherBoard />
-                    <h3 >{this.props.title}</h3>
 
                     <div>
                         <div>
                             <p className="container-sm mx-auto">
-                            Welcome!  This project utilizes React JS to add items from the Edamam Food Database into a User List.  On this page you can also note the Weather (default Louisville, KY) and check on the current stats of today's COVID-19 Pandemic, that began shortly after starting this project.
+                            Welcome.  This project utilizes React JS to add items from the Edamam Food Database into a User List.  On this page you can also note the Weather (default Louisville, KY) and check on the current stats of today's COVID-19 Pandemic, that began shortly after starting this project.
                             </p>
-                            <h5>
-                            To create a new list, click <span className="button-create-list"><Link to="/newList" >Here</Link></span>  
-                            </h5>
+                            <h5 className="button-create-list mb-3"><Link to="/newList" >To create a new list, click Here</Link></h5>  
                             
                         </div>
                     </div>

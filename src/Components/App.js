@@ -21,12 +21,12 @@ class App extends Component {
         {/* Routes */}
         <BrowserRouter>
 
-          <Route path="/" component={Navigation} />
-          <Route path="/home" component={() =>
-                  <Home
-                    title="Doubleplus Shopping List" 
-                    covidHeader="COVID-19 Stats"
-                  />} />
+          <Route path="/" component={() =>
+            <Navigation
+              title="Doubleplus Shopping List" 
+
+              />} />
+          <Route path="/home" component={Home} />
           <Route exact path="/newlist" component={() => 
                   <NewList 
                     title="Create New List" 

@@ -32,7 +32,7 @@ class CovidStats extends Component {
     render() {
         if(this.state.loaded) {
             return (
-                <div className="secondary-content">
+                <div className="covid-stat-border">
                             <div className="container-covid-stats">
                                 <h5 className="covid-header">{this.props.title}</h5>
                                 <div className="covid-container">
@@ -59,7 +59,7 @@ class CovidStats extends Component {
                                         <h4 className="covid-stat">{this.state.covidStats[0].totalNewDeathsToday}</h4>
                                     </span>
                                 </div>
-                                Data Source courtesy of<a href={this.state.covidStats[0].source} className="link-credit"> VirusTracker</a>
+                                <span className="virus-tracker-credit">Data Source courtesy of<a href={this.state.covidStats[0].source} className="link-credit"> VirusTracker</a></span>
                                     
                             </div>
                             {/* /Covid-19 statistic chart */}
