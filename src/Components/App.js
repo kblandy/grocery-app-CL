@@ -14,6 +14,7 @@ import GroceryList from './GroceryList';
 class App extends Component {
 
   render() {
+
     return (
 
       <div className="container">
@@ -23,22 +24,25 @@ class App extends Component {
 
           <Route path="/" component={() =>
             <Navigation
-              title="Doubleplus Shopping List" 
-
+              titleTop="Doubleplus" 
+              titleBottom="Shopping List"
               />} />
           <Route path="/home" component={Home} />
           <Route exact path="/newlist" component={() => 
                   <NewList 
                     title="Create New List" 
-                    subtitle="Fill out the info below to create a new list"
+                    subtitle="Fill out this form create a new list"
                     // userList={this.userList}
                     // createList={this.handleCreateList}
                     />} />
           <Route exact path="/mylists" component={GroceryList} />
-
+          
+          {/* Footer */}
           <div>
-            <footer>This Paper Property of INGSOC</footer>
+            <footer><img className="footer-image" src={require('../Images/1984-ingsoc.jpg')} alt="ingsoc logo" /> This Pamphlet Property of INGSOC</footer>
             </div>
+            
+            
 
 
           {/* <GroceryList /> */}

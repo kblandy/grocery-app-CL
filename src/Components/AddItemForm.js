@@ -52,7 +52,7 @@ class AddItemForm extends Component {
                 type="text"
                 name="inputValue"
                 onChange={(e) => this.handleChange(e.target.value)}
-                placeholder="Type an Item"
+                placeholder={this.props.inputPlaceholder}
               />
               <button onClick={this.handleSubmit}>Search</button>
             </form>
@@ -71,7 +71,7 @@ class AddItemForm extends Component {
                   type="text"
                   name="inputValue"
                   onChange={(e) => this.handleChange(e.target.value)}
-                  placeholder="Type an Item"
+                  placeholder={this.props.inputPlaceholder}
                 />
                 <button onClick={this.handleSubmit}>Search</button>
               </form>

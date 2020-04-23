@@ -86,7 +86,7 @@ class SearchList extends Component {
 
                         <div>
                             <div key={index}>
-                                <h3>{searchItem.itemName}</h3>
+                                <h4>{searchItem.itemName}</h4>
                                 <img src={searchItem.itemImage} alt="" />
                             </div>
 

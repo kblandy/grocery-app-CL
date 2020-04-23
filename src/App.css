@@ -25,6 +25,20 @@ body {
   margin: auto;
 }
 
+button {
+  font-size: 12px;
+  background: transparent;
+  border: 1px slategrey solid;
+  font-family: 'Aldrich', sans-serif;
+  padding: 2px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  color: maroon;
+  font-weight: bold;
+}
+
 footer {
   font-family: 'Aldrich', sans-serif;
   font-weight: bolder;
@@ -32,6 +46,15 @@ footer {
   letter-spacing: 2px;
   padding: 10px;
   text-transform: uppercase;
+  margin-bottom: 0;
+  border-top-style: double;
+  margin-top: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
 }
 
 h5 {
@@ -47,12 +70,21 @@ h6 {
   padding-top: 2px;
 }
 
+
 img {
-  width: 100px;
+  background: transparent;
+  width: 50px;
+  padding: 3px;
+  border: 1px dotted black;
 }
 
 input {
+  font-family: 'Aldrich', sans-serif;
   text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 1px;
+  margin: 10px;
 }
 
 li {
@@ -75,23 +107,34 @@ ul {
   background: transparent;
 }
 
-.navbar.container {
-  background: transparent;
-}
-
-.nav-link {
-  text-decoration: none;
-}
 
 /* CLASS STYLES */
 
-.button-create-list {
-  padding: 4px 9px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px;
+.arrow {
+  background: transparent;
+  width: 20px;
+  border-radius: 15px;
+  border: none;
+  margin: auto;
+  padding: 5px;
+}
+
+.button-x {
+  font-family: 'Special Elite', cursive;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  margin-top: 8px;
+  padding: 2px;
+}
+
+.button-x:hover {
+  border: 1px black solid;
+}
+
+.button-submit {
+  width: 40%;
+  margin: auto;
 }
 
 .container {
@@ -161,10 +204,53 @@ ul {
   flex-direction: column;
 }
 
+.footer-image {
+    width: 40px;
+    border-radius: 50%;
+    border: 1px black solid;
+}
+
+.form-container {
+  border: 1px dashed black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.h6-item {
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-top: 9px;
+  text-transform: uppercase;
+}
 
 .link-credit {
   color: black;
   font-size: 15px;
+}
+
+.header-title {
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  letter-spacing: 3px;
+  padding: 5px;
+  border-bottom-style: double;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+.img-stamp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px black solid;
+  margin: auto;
 }
 
 .navbar {
@@ -178,18 +264,54 @@ ul {
   width: 100%;
   border-bottom-style: double;
 }
+
+.navbar.container {
+  background: transparent;
+}
+
+.nav-date {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 12px;
+  margin: 0;
+}
+
 .nav-header {
   background: transparent;
   font-family: 'UnifrakturCook', cursive;
   font-size: 55px;
   letter-spacing: 3px;
-  padding: 10px;
+}
+
+.nav-header-bottom {
+  background: transparent;
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 55px;
+  letter-spacing: 3px;
   border-bottom-style: double;
+  padding-bottom: 10px;
 }
 
 .nav-link {
   color: black;
   font-family: 'Cinzel', serif;
+  text-decoration: none;
+}
+
+.new-list-sub {
+  margin: auto;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.submit-link {
+  font-size: 12px;
+}
+
+.submit-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .virus-tracker-credit {
@@ -205,6 +327,7 @@ ul {
 
 #weather-header {
   font-family: 'Cinzel', serif;
+  font-size: 16px;
   padding: 10px;
   letter-spacing: 1px;
   border-bottom: 1px black dashed;

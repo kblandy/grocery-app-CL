@@ -75,6 +75,7 @@ class GroceryList extends Component {
                     //now the search value can be retrieved for functions
                       // searchValue={localStorage.getItem('inputValue')}
                       addItem={this.handleAddItem}
+                      inputPlaceholder="Search Food Stock"
                     />
             </div>
             

@@ -7,7 +7,7 @@ class Item extends Component {
             <div className="container">
                 <ul className="d-inline-flex">
                     <li>
-                        {this.props.name}
+                        <h6 className="h6-item">{this.props.name}</h6>
                     </li>
 
                     <li>
@@ -15,7 +15,7 @@ class Item extends Component {
                     </li>
 
                     <li>
-                        <button onClick={ () => this.props.removeItem(this.props.id) }> x </button>
+                        <button className="button-x" onClick={ () => this.props.removeItem(this.props.id) }> x </button>
                     </li>
                 </ul>
             </div>

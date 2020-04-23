@@ -6,7 +6,7 @@ const Header = ({ items, title, location, date }) => {
     return (
         <header>
             <div className="container">
-                <h1>{title}</h1>
+                <h2 className="header-title">{title}</h2>
                     <div className="d-inline-flex">
                         <p className="p-2">Zipcode: {location}</p>
                         <p className="p-2">Date: {date}</p>

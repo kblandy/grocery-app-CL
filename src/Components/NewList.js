@@ -53,38 +53,44 @@ class NewList extends Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit} className="container-new-list" id="create-new-list-form">
-                <h2>{this.props.title}</h2>
-                <h4>{this.props.subtitle}</h4>
+                <h2 className="header-title">{this.props.title}</h2>
                 {/* input attribute 'name' is called as target in handleChange() */}
-                    <input 
-                        type="text" 
-                        name="userListName"
-                        value={this.state.userList.userListName} 
-                        onChange={this.handleChange} 
-                        id="user-list-name" 
-                        placeholder="Name your List" />
+                    <div className="form-container">
+                    <p className="new-list-sub">{this.props.subtitle}</p>
+                        <input 
+                            type="text" 
+                            name="userListName"
+                            value={this.state.userList.userListName} 
+                            onChange={this.handleChange} 
+                            id="user-list-name" 
+                            placeholder="List Name" />
 
-                    <input 
-                        type="text" 
-                        name="userListZipcode"
-                        value={this.state.userList.userListZipcode}
-                        onChange={this.handleChange}
-                        id="user-list-zip" 
-                        placeholder="Enter zip" />
+                        <input 
+                            type="text" 
+                            name="userListZipcode"
+                            value={this.state.userList.userListZipcode}
+                            onChange={this.handleChange}
+                            id="user-list-zip" 
+                            placeholder="Enter zipcode" />
 
-                    <input 
-                        type="text" 
-                        name="userListDate"
-                        value={this.state.userList.userListDate}
-                        onChange={this.handleChange}
-                        id="user-list-date" 
-                        placeholder="Date" />
+                        <input 
+                            type="text" 
+                            name="userListDate"
+                            value={this.state.userList.userListDate}
+                            onChange={this.handleChange}
+                            id="user-list-date" 
+                            placeholder="Date" />
 
-                    <button
-                    //route, onclick will reroute to mylists tab
-                        onChange={this.handleSubmit}><Link to="/mylists"><h4>Submit</h4></Link></button>
+                        <div className="submit-container">
+                        <img src={require('../Images/stamp.jpg')} alt="victory stamp" className="img-stamp" />
+                        <button className="button-submit"
+                            //route, onclick will reroute to mylists tab
+                            onChange={this.handleSubmit}><Link to="/mylists" className="submit-link">Submit</Link>
+                        </button>
+                        </div>
 
-                        
+                    </div>
+                
                 </form>
             </div>
         );

@@ -32,13 +32,13 @@ class WeatherBoard extends Component {
 
 
         if(this.state.loaded) {
-
-            let capitalizedWeather = this.state.weatherStats[0].weather.toUpperCase();
             
             return (
                 <div id="weather-header">
 
-                {capitalizedWeather} in {this.state.weatherStats[0].name} 
+                <img className="arrow" src={require('../Images/arrow-left.jpg')} alt="arrow pointing left" />
+                    {this.state.weatherStats[0].weather} in {this.state.weatherStats[0].name}  
+                <img src={require('../Images/arrow-right.jpg')} className="arrow" alt="arrow pointing right" />
                 
                 </div>
             )
