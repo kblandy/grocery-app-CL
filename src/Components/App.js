@@ -31,7 +31,7 @@ class App extends Component {
           <Route exact path="/newlist" component={() => 
                   <NewList 
                     title="Create New List" 
-                    subtitle="Fill out this form create a new list"
+                    subtitle="Fill form to create new list"
                     // userList={this.userList}
                     // createList={this.handleCreateList}
                     />} />
