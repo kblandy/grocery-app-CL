@@ -5,17 +5,15 @@ class Item extends Component {
 
         return(
             <div className="container">
-                <ul className="container-item">
+                <ul className="d-inline-flex">
                     <li>
-                    {this.props.name}
+                        {this.props.name}
                     </li>
 
                     <li>
-                    <img src={this.props.image} alt={this.props.name}/>
+                        <img src={this.props.image} alt={this.props.name}/>
                     </li>
-                    {/* <li><h3>{this.props.id}</h3></li>
-                    <li><h3>{this.props.name}</h3></li>
-                    <li><h3>{this.props.price}</h3></li> */}
+
                     <li>
                         <button onClick={ () => this.props.removeItem(this.props.id) }> x </button>
                     </li>
@@ -26,6 +24,3 @@ class Item extends Component {
 };
 
 export default Item;
-
-// addItem button should be on items rendered from API request
-{/* <button onClick={ () => this.props.addItem(this.props.name)}>Add an Item</button> */}

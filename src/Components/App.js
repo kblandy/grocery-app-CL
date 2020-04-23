@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
 
-      <div>
+      <div className="container">
 
         {/* Routes */}
         <BrowserRouter>
@@ -36,6 +36,9 @@ class App extends Component {
                     />} />
           <Route exact path="/mylists" component={GroceryList} />
 
+          <div>
+            <footer>This Paper Property of INGSOC</footer>
+            </div>
 
 
           {/* <GroceryList /> */}

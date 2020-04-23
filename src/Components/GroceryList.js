@@ -48,7 +48,7 @@ class GroceryList extends Component {
     render() {
       console.log(this.state.items);
         return (
-            <div>
+            <div className="div-fix-collapse">
                 {/* Header Component */}
                 <Header 
                 title={localStorage.getItem('userListName')}

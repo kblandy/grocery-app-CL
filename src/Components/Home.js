@@ -1,31 +1,33 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+
 import CovidStats from './CovidStats';
 import WeatherBoard from './WeatherBoard';
+
 
 class Home extends Component {
     
     render() {
             return (
-                <div className="main-page">
+                <div className="div-fix-collapse">
                     <WeatherBoard />
-                    <h3>{this.props.title}</h3>
+                    <h3 >{this.props.title}</h3>
 
-                    <div className="secondary-content">
+                    <div>
                         <div>
-                            <p>
-                            Mind your own goddamn business, Gene! I'm having a conversation with my mother here! Kissing Rick's ass isn't gonna make him stay, Mom, but it will help you lose everyone else. It's fine, everythings is fine. theres an infinite number of realities Morty, and in a few--
+                            <p className="container-sm mx-auto">
+                            Welcome!  This project utilizes React JS to add items from the Edamam Food Database into a User List.  On this page you can also note the Weather (default Louisville, KY) and check on the current stats of today's COVID-19 Pandemic, that began shortly after starting this project.
                             </p>
-                            <h4>
-                            To create a new list, click the button below!
-                            </h4>
-                            <button><Link to="/newList" >New List</Link></button>
+                            <h5>
+                            To create a new list, click <span className="button-create-list"><Link to="/newList" >Here</Link></span>  
+                            </h5>
+                            
                         </div>
                     </div>
                     {/* CovidStats Component */}
-                    <div className="container-item">
+                    <div>
                         <CovidStats 
-                                title="Covid-19 Stats"
+                                title="COVID-19 Stats"
                             />
                     </div>
                         

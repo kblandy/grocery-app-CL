@@ -34,32 +34,32 @@ class CovidStats extends Component {
             return (
                 <div className="secondary-content">
                             <div className="container-covid-stats">
-                                <h3 className="covid-header">{this.props.title}</h3>
+                                <h5 className="covid-header">{this.props.title}</h5>
                                 <div className="covid-container">
                                     <span className="span-covid-global">
-                                        <h4 className="covid-title">Total Global Cases: </h4>
+                                        <h6 className="covid-title">Total Global Cases: </h6>
                                         <h4 className="covid-stat">{this.state.covidStats[0].totalGlobalCases}</h4>
                                     </span>
                                 </div>
                                 <div className="covid-container">
                                     <span className="span-covid-global">
-                                        <h4 className="covid-title">Total Global Deaths: </h4>
+                                        <h6 className="covid-title">Total Global Deaths: </h6>
                                         <h4 className="covid-stat">{this.state.covidStats[0].totalDeaths}</h4>
                                     </span>
                                 </div>
                                 <div className="covid-container">
                                     <span className="span-covid-deaths">
-                                            <h4 className="covid-title">Total New Cases Today: </h4>
+                                            <h6 className="covid-title">Total New Cases Today: </h6>
                                             <h4 className="covid-stat">{this.state.covidStats[0].totalNewCasesToday}</h4>
                                     </span>
                                 </div>
                                 <div className="covid-container">
                                     <span className="span-covid-deaths">
-                                        <h4 className="covid-title">Total New Deaths Today: </h4>
+                                        <h6 className="covid-title">Total New Deaths Today: </h6>
                                         <h4 className="covid-stat">{this.state.covidStats[0].totalNewDeathsToday}</h4>
                                     </span>
                                 </div>
-                                <a href={this.state.covidStats[0].source} className="link-credit"><h5>Data Source supplied by VirusTracker </h5></a>
+                                Data Source courtesy of<a href={this.state.covidStats[0].source} className="link-credit"> VirusTracker</a>
                                     
                             </div>
                             {/* /Covid-19 statistic chart */}

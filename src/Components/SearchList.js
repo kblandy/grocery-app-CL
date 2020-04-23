@@ -79,16 +79,27 @@ class SearchList extends Component {
             } else {
                 return (
 
-                    <div className="search-results-container" id="searchlist-div">
+                    <div className="container-sm">
     
                     {/* loops through api requested item and displays its name and image */}
                         {searchItems.map((searchItem, index) =>
-                            <div className="container-item" key={index}>
+
+                        <div>
+                            <div key={index}>
                                 <h3>{searchItem.itemName}</h3>
                                 <img src={searchItem.itemImage} alt="" />
-                                <button onClick={() => {this.handleClick(searchItem.itemName, searchItem.itemImage)}} className="add-button">Add item!</button>
-                                <button onClick={() => {this.handleClearSearch()}}className="add-button">Reset</button>
                             </div>
+
+                            <div className="flex-div-column">
+                                <div>
+                                    <button onClick={() => {this.handleClick(searchItem.itemName, searchItem.itemImage)}} className="add-button">Add item!</button>
+                                </div>
+                                <div> 
+                                    <button onClick={() => {this.handleClearSearch()}}className="add-button">Reset</button>
+                                </div>
+                            </div>
+                        </div>      
+                            
                         )}
                     </div>
                 );   

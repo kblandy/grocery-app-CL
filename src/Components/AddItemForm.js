@@ -45,8 +45,8 @@ class AddItemForm extends Component {
     // will render Form with SearchList after the form is submitted
     render() {
       let searchForm = (
-        <div>
-          <div className="container-item">
+
+          <div>
             <form>
               <input
                 type="text"
@@ -57,7 +57,7 @@ class AddItemForm extends Component {
               <button onClick={this.handleSubmit}>Search</button>
             </form>
           </div>
-        </div>
+
       );
       if (this.state.submitted === false) {
         return searchForm;
@@ -65,7 +65,7 @@ class AddItemForm extends Component {
       if (this.state.submitted === true) {
         return (
           <div>
-            <div className="container-item">
+            <div>
               <form>
                 <input
                   type="text"

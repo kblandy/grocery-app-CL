@@ -1,194 +1,132 @@
 /* Element styles */
 
-a {
-  text-decoration: none;
-  color: white;
-  margin: auto;
-}
-
-button {
-  color: white;
-  background: lightslategrey;
-  padding: 5px;
-  border-radius: 6px;
-  border: solid black 1px;
-}
-
-h3 {
-  padding: 5px;
-  /* font-family: 'Tangerine', cursive; */
-  font-size: 30px;
-  letter-spacing: 4px;
-}
-
-h4 {
-  margin: 0;
-  padding: 4px;
-  font-weight: bolder;
-}
-
-
-img {
-  width: 95%;
-  height: auto;
-  padding: 30px;
-
-}
-
-input {
-  padding: 10px;
-  margin: 2px;
-  text-align: center;
-}
-
-
-li {
-  list-style: none;
-  margin: 5px;
-}
-
-p {
-  text-align: center;
-  width: 400px;
-  margin: auto;
-  padding: 4px;
-}
-
-/* Class Styles */
-
-.add-button {
-  height: 10%;
-  width: auto;
-  align-self: center;
-}
-
-.container,
-.nav-container{
-  display: flex;
-  margin: auto;
-  padding: 2px;
-}
-
-.container {
-  border: solid black 1px;
-  justify-content: space-evenly;
-  width: 75%;
-}
-
-.container-covid-stats {
-  border: 1px solid black;
-  width: 280px;
-  height: auto;
-  margin: auto;
-}
-
-.container-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: auto;
-}
-
-.container-new-list {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 300px;
-  margin: auto;
-  border: solid black 1px;
-}
-
-.covid-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: space-around;
-  margin: auto;
-  padding: 2px;
-  width: 50%;
-
-}
-
-.covid-header {
-  font-size: 25px;
-  text-decoration: underline;
-  margin: 10px;
-}
-
-.covid-title {
-  font-weight: lighter;
-  font-size: 20px;
-}
-
-.covid-stat {
-  color: maroon;
-  font-size: 20px;
-  letter-spacing: 3px;
-  align-self: center;
-}
-
-/* hides searchlist div */
-.hidden-container {
-  display: none;
-}
-
-.link-credit {
-  color: black;
-}
-
-.list-title {
-  text-align: center;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-}
-
-.main-page {
-  display: flex;
-  flex-direction: column;
-  width: 65vw;
-  margin: auto;
-  text-align: center;
-}
-
-.nav-container {
-  background: lightslategrey;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  height: 10vh;
-  width: 75%;
-
-}
-
-.search-results-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 70%;
-  border: solid black 1px;
-  margin: auto;
-}
-
-
-.span-covid-global,
-.span-covid-deaths {
-
-  flex-direction: row;
-  justify-content: space-evenly;
+* {
   margin: 0;
   padding: 0;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+body {
+  text-align: center;
+  margin: auto;
+}
+
+footer {
+  padding: 10px;
+}
+
+h5 {
+  font-weight: lighter;
+}
 
 
+h6 {
+  font-weight: lighter;
+  font-size: 18px;
+}
 
-/*ID Styles*/
+img {
+  width: 100px;
+}
+
+input {
+  text-align: center;
+}
+
+li {
+  text-decoration: none;
+}
+
+p {
+  font-size: 15px;
+  line-height: 2em;
+  text-align: justify;
+  padding-top: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* CLASS STYLES */
+
+.button-create-list {
+  border: 1px solid black;
+  background-color: rgb(240, 238, 238);
+  padding: 4px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+  border-radius: 75px;
+}
+
+.container {
+  padding: 1px;
+  width: 100%;
+}
+
+.covid-stat {
+  color: maroon;
+}
+
+.covid-header {
+  letter-spacing: 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.div-fix-collapse {
+  margin-top: 50px;
+}
+
+.flex-div-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-div-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-credit {
+  color: black;
+  font-size: 15px;
+}
+
+.nav-link {
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  padding: 2px;
+  position: fixed;
+  margin: auto;
+  width: 100%;
+}
+
+/* ID STYLES */
+
+#weather-header {
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+#root {
+  padding: 1px;
+  margin-top: 0;
+}
 
 
 
@@ -200,4 +138,3 @@ p {
     width: 20%;
   }
 }
-

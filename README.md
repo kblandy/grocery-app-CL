@@ -31,6 +31,10 @@ npm install and run React application
 
 BrowserRouter and Route: npm install --save react-router-dom
 
+Bootstrap: npm install bootstrap
+Jquery: npm install jquery
+Popper: npm install popper.js
+
 APIS used:
 
 Edamam food database => (api key and id required)

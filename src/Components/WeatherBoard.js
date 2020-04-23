@@ -29,12 +29,17 @@ class WeatherBoard extends Component {
     }
 
     render(){
+
+
         if(this.state.loaded) {
+
+            let capitalizedWeather = this.state.weatherStats[0].weather.toUpperCase();
+            
             return (
-                <div>
-                <p>
-                A {this.state.weatherStats[0].weather} in {this.state.weatherStats[0].name} today!
-                </p>
+                <div id="weather-header">
+
+                {capitalizedWeather} in {this.state.weatherStats[0].name} today!
+                
                 </div>
             )
         } else {
