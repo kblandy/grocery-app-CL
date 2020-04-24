@@ -54,7 +54,6 @@ footer {
 h3 {
   font-size: 20px;
   font-weight: bolder;
-  word-wrap: break-word;
   letter-spacing: 1px;
 }
 
@@ -387,8 +386,18 @@ ul {
 
   }
 
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+
   p {
     text-align: none;
+  }
+
+  .price {
+    color: maroon;
+    
   }
 
   #article-newspeak {
@@ -399,8 +408,8 @@ ul {
   }
   
   #big-article {
-    order: 2;
-    width: 600px;
+    order: 1;
+    width: 700px;
     align-self: flex-start;
     margin: auto;
   }
@@ -452,8 +461,9 @@ ul {
 
   #welcome-div {
     width: 300px;
-    order: 1;
+    order: 2;
     margin: auto;
+    align-self: flex-start;
   }
 
 };

@@ -11,9 +11,11 @@ class SmallAd extends Component {
                     <p className="small-ad-p">
                         Toilet Paper so SOFT you won't believe it's NATIONALIZED!
                         Responsible party members arrive early and never find themselves without.
-                        Pick up yours today for <h3 className="p-3">45,60 credits</h3>
+                        Pick up yours today for 
+                        
+                        <h3 className="price">45,60 credits</h3>
                     </p>
-                    <h3 className="mx-auto">Limited Stocks</h3>
+                    <h3 className="small-ad-p p-0">Limited Stocks</h3>
             </div>
         );
     }
