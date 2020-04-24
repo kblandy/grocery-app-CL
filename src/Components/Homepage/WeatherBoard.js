@@ -36,9 +36,9 @@ class WeatherBoard extends Component {
             return (
                 <div id="weather-header">
 
-                <img className="arrow" src={require('../Images/arrow-left.jpg')} alt="arrow pointing left" />
+                <img className="arrow" src={require('../../Images/arrow-left.jpg')} alt="arrow pointing left" />
                     {this.state.weatherStats[0].weather} in {this.state.weatherStats[0].name}  
-                <img src={require('../Images/arrow-right.jpg')} className="arrow" alt="arrow pointing right" />
+                <img src={require('../../Images/arrow-right.jpg')} className="arrow" alt="arrow pointing right" />
                 
                 </div>
             )

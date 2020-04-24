@@ -6,9 +6,9 @@ import {
 
 //App Components
 import Navigation from './Navigation';
-import Home from './Home';
+import Home from './Homepage/Home';
 import NewList from './NewList';
-import GroceryList from './GroceryList';
+import GroceryList from './Grocerylist/GroceryList';
 
 
 class App extends Component {
