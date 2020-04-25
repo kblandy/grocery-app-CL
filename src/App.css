@@ -178,6 +178,8 @@ ul {
   font-weight: bolder;
 }
 
+
+
 .covid-title {
   font-family: 'Aldrich', sans-serif;
   font-size: 12px;
@@ -346,6 +348,10 @@ ul {
 
 /* ID STYLES */
 
+#covid-subtitle {
+  display: none;
+}
+
 #small-ad {
   display: none;
 }
@@ -370,14 +376,7 @@ ul {
 
 @media only screen and (min-width: 800px) {
 
-  .news-container-flex {
-    display: flex;
-    flex-direction: row;
-    
-    flex-wrap: nowrap;
-    align-content: stretch;
-
-  }
+  
 
   h3 {
     padding: 0;
@@ -398,11 +397,12 @@ ul {
     width: 300px;
     align-self: flex-end;
     margin: auto;
+    height: 200px;
   }
   
   #big-article {
     order: 1;
-    width: 700px;
+    width: 900px;
     align-self: flex-start;
     margin: auto;
   }
@@ -413,13 +413,34 @@ ul {
     width: 800px;
     align-items: baseline;
     justify-content: flex-end;
-    font-size: 2px;
+    border: 1px dashed maroon;
   }
 
+  .covid-header {
+    padding: 5px;
+
+  }
+
+  .news-container-flex {
+    display: flex;
+    flex-direction: row;
+    
+
+    align-content: flex-start;
+
+  }
 
   #covid-stats {
     order: 3;
     margin: auto;
+  }
+
+  #covid-subtitle {
+    display: block;
+    padding: 10px;
+    letter-spacing: 6px;
+    margin-top: 0;
+    font-size: 25px;
   }
 
   .covid-title {
@@ -463,6 +484,7 @@ ul {
   .welcome-flex {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
   }
 
   #small-ad-stamp {
@@ -475,11 +497,13 @@ ul {
     top: 65px;
   }
 
+  #covid-credit {
+    order: 0;
+  }
+
   #welcome-div {
-    width: 300px;
-    order: 2;
-    margin: auto;
-    align-self: flex-start;
+
+    align-items: flex-start;
   }
 
 };

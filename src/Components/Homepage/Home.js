@@ -20,12 +20,11 @@ class Home extends Component {
 
                     <div className="welcome-flex">
                         <Welcome />
-
-
                         <CovidStats 
                             title="COVID-19 Stats"
+                            subtitle="exercise your right to doublethink"
                         />
-                        
+
                     </div>
                     <div className="news-container-flex">
 
