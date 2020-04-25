@@ -32,7 +32,7 @@ class CovidStats extends Component {
     render() {
         if(this.state.loaded) {
             return (
-                <div className="covid-stat-border" id="covid-stats">
+                <div id="covid-stats">
                             <div className="container-covid-stats">
                                 <h5 className="covid-header">{this.props.title}</h5>
                                 <div className="covid-container">

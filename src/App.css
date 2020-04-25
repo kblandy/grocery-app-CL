@@ -150,20 +150,13 @@ ul {
 }
 
 .container-covid-stats {
-  border: black solid 1px;
+  border-style: double;
   margin: auto;
   padding: 20px;
 }
 
 .covid-stat {
   color: maroon;
-}
-
-.covid-stat-border {
-  border: black solid 1px;
-  padding: 2px;
-  width: 290px;
-  margin: auto;
 }
 
 .covid-header {
@@ -312,8 +305,7 @@ ul {
 
 .news-article-header {
   font-family: 'Oswald', sans-serif;
-  font-size: 70px;
-  font-weight: bolder;
+  font-size: 40px;
   text-transform: uppercase;
 
 }
@@ -381,7 +373,8 @@ ul {
   .news-container-flex {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    
+    flex-wrap: nowrap;
     align-content: stretch;
 
   }
@@ -414,10 +407,28 @@ ul {
     margin: auto;
   }
 
+  .container-covid-stats {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    align-items: baseline;
+    justify-content: flex-end;
+    font-size: 2px;
+  }
+
+
   #covid-stats {
     order: 3;
-    align-self: flex-end;
     margin: auto;
+  }
+
+  .covid-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .covid-stat {
+    align-self: flex-end;
   }
 
   #img-ad {
@@ -447,6 +458,11 @@ ul {
     font-family: 'Special Elite', cursive;
     text-transform: none;
     line-height: 15px;
+  }
+
+  .welcome-flex {
+    display: flex;
+    flex-direction: row;
   }
 
   #small-ad-stamp {

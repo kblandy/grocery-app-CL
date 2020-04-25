@@ -18,13 +18,16 @@ class Home extends Component {
                     </div>
 
 
-                    <div className="news-container-flex">
+                    <div className="welcome-flex">
                         <Welcome />
 
 
                         <CovidStats 
                             title="COVID-19 Stats"
                         />
+                        
+                    </div>
+                    <div className="news-container-flex">
 
                         <BigArticle />
 
