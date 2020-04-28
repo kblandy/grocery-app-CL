@@ -348,6 +348,11 @@ ul {
 
 /* ID STYLES */
 
+/* only visible on large screens */
+#big-article-flex-wide {
+  display: none;
+}
+
 #covid-subtitle {
   display: none;
 }
@@ -407,6 +412,20 @@ ul {
     margin: auto;
   }
 
+  #big-article-flex-wide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 800px;
+  
+  }
+
+  /* hides in large screen */
+  #big-article-p-mobile {
+    display: none;
+  }
+
   .container-covid-stats {
     display: flex;
     flex-direction: row;
@@ -421,13 +440,15 @@ ul {
 
   }
 
+
+  .form-container {
+    width: 400px;
+  }
+
   .news-container-flex {
     display: flex;
     flex-direction: row;
-    
-
     align-content: flex-start;
-
   }
 
   #covid-stats {

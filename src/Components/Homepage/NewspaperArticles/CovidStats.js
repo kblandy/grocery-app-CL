@@ -11,7 +11,7 @@ class CovidStats extends Component {
     };
 
     componentDidMount() {
-        let request = axios.get('https://thevirustracker.com/free-api?global=stats');
+        let request = axios.get('https://cors-anywhere.herokuapp.com/https://thevirustracker.com/free-api?global=stats');
 
         request.then(response => {
             const data = response.data;

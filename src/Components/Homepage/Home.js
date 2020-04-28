@@ -30,7 +30,7 @@ class Home extends Component {
 
                         <BigArticle />
 
-                        <SmallArticle />
+
 
 
                     </div>  

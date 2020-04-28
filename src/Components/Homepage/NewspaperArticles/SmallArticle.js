@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import SmallAd from './SmallAd';
 
 class SmallArticle extends Component {
     render() {
         return (
+
             <div className="row" id="article-newspeak">
+                <SmallAd
+                    title="Doubleplusgood Toilet Tissue" 
+                />
+
                 <h4 className="mx-auto pt-3">Do your part</h4>
                 <p>
                     In order to become self taught competent people and good party members, citizens should continue to work, even during these times of of political and pandemical implications.

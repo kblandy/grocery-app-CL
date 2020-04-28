@@ -84,14 +84,14 @@ class SearchList extends Component {
                     {/* loops through api requested item and displays its name and image */}
                         {searchItems.map((searchItem, index) =>
 
-                        <div>
-                            <div key={index}>
+                        <div key={index}>
+                            <div>
                                 <h4>{searchItem.itemName}</h4>
                                 <img src={searchItem.itemImage} alt="" />
                             </div>
 
                             <div className="flex-div-column">
-                                <div>
+                                <div key={index}>
                                     <button onClick={() => {this.handleClick(searchItem.itemName, searchItem.itemImage)}} className="add-button">Add item!</button>
                                 </div>
                                 <div> 
