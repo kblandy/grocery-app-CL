@@ -89,7 +89,7 @@ class SearchList extends Component {
             
         };
         
-    };
+    }
 
 
     

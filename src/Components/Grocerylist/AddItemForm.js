@@ -81,10 +81,10 @@ class AddItemForm extends Component {
           </div>
 
       );
-      if (this.state.submitted === false) {
+      if (!this.state.submitted) {
         return searchForm;
       }
-      if (this.state.submitted === true) {
+      if (this.state.submitted) {
         return (
           <div>
             <div>
