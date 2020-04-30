@@ -13,10 +13,8 @@ a {
 
 a:hover {
   color: maroon;
-  font-family: 'Special Elite', cursive;
-  font-weight: bold;
-  text-transform: lowercase;
-  text-decoration: none;
+  text-decoration: overline underline;
+  padding: auto;
 }
 
 body {
@@ -244,6 +242,17 @@ ul {
   width: 80%;
   margin: auto;
   padding: 10px;
+}
+
+.item-container {
+  display: flex;
+  width: 100%;
+
+
+}
+
+.item-inner-container {
+  /* margin: auto; */
 }
 
 .img-stamp {

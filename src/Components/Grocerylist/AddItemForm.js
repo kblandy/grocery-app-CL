@@ -33,6 +33,10 @@ class AddItemForm extends Component {
           }]
         })
       })
+      .catch(error => {
+        console.warn('Error fetching and parsing data: ', error)
+        alert("Item not found. Please try another Search.")
+      });
     }
 
     //when search button is clicked

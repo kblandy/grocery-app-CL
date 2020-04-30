@@ -59,7 +59,7 @@ class GroceryList extends Component {
 
                 {/* Items List */}
                 {this.state.items.map( (item, index) =>
-
+                  <div className="item-container">
                     <Item 
                     id={item.id}
                     name={item.name}
@@ -68,7 +68,7 @@ class GroceryList extends Component {
                     index={index}
                     removeItem={this.handleRemoveItem}
                     />
-
+                  </div>
                 )}
                     {/* AddItemForm Component */}
                     <AddItemForm

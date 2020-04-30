@@ -11,7 +11,6 @@ class NewList extends Component {
             userList:
             {
                 userListName: '',
-                userListZipcode: '',
                 userListDate: ''
             },
 
@@ -64,14 +63,6 @@ class NewList extends Component {
                             onChange={this.handleChange} 
                             id="user-list-name" 
                             placeholder="List Name" />
-
-                        <input 
-                            type="text" 
-                            name="userListZipcode"
-                            value={this.state.userList.userListZipcode}
-                            onChange={this.handleChange}
-                            id="user-list-zip" 
-                            placeholder="Enter zipcode" />
 
                         <input 
                             type="text" 
