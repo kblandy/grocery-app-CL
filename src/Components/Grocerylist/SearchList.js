@@ -6,8 +6,6 @@ class SearchList extends Component {
         super(props);
         this.state = {
             loaded: false,
-            //items searched here
-            searchItems: this.props.searchItems,
             addItem: false,
             searchCleared: false
         }
@@ -44,27 +42,19 @@ class SearchList extends Component {
 
     render() {
 
-        var { loaded, searchItems } = this.state;
+        var { loaded } = this.state;
 
         if(!loaded) {
             return <div>Loading...</div>;
         }
         if(loaded) {
 
-            // if(this.state.searchCleared === true) {
-
-            //     return (
-            //         null
-
-            //     )
-
-            // } else {
                 return (
 
                     <div className="container-sm">
     
                     {/* loops through api requested item and displays its name and image */}
-                        {searchItems.map((searchItem, index) =>
+                        {this.props.searchItems.map((searchItem, index) =>
 
                         <div key={index}>
                             <div>
@@ -75,9 +65,6 @@ class SearchList extends Component {
                             <div className="flex-div-column">
                                 <div key={index}>
                                     <button onClick={() => {this.handleClick(searchItem.itemName, searchItem.itemImage)}} className="add-button">Add item!</button>
-                                </div>
-                                <div> 
-                                    <button onClick={() => {this.handleClearSearch()}}className="add-button">Reset</button>
                                 </div>
                             </div>
                         </div>      

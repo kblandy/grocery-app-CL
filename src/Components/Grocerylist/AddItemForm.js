@@ -25,7 +25,7 @@ class AddItemForm extends Component {
 
       request.then(response => {
         const data = response.data;
-        console.dir(data);
+        // console.dir(data);
         this.setState({
           searchItems: [{
             itemName: data.parsed[0].food.label,
@@ -52,6 +52,7 @@ class AddItemForm extends Component {
 
     };
 
+    //puts user value into state
     handleChange = (input) => {
       this.setState((prevState) => {
         return {
@@ -84,7 +85,7 @@ class AddItemForm extends Component {
       if (!this.state.submitted) {
         return searchForm;
       }
-      if (this.state.submitted) {
+      else {
         return (
           <div>
             <div>
