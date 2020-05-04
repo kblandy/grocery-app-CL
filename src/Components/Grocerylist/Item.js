@@ -1,20 +1,31 @@
 import React, { Component } from 'react';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Item extends Component {
     render() {
 
         return(
             <div className="item-inner-container">
+
                 <ul className="d-inline-flex" id="item-ul">
                 <li>
-                        <button className="button-x" onClick={ () => this.props.removeItem(this.props.id) }> x </button>
                     </li>
-                    <li>
-                        <img src={this.props.image} alt={this.props.name}/>
+                    <li className="pr-2">
+                        <img id="item-image" src={this.props.image} alt={this.props.name}/>
                     </li>
 
-                    <li>
+                    <li className="pr-2">
                         <h6 className="h6-item">{this.props.name}</h6>
+                    </li>
+
+                    <li className="pr-2">
+                    <FontAwesomeIcon 
+                        icon={faTrashAlt} 
+                        onClick={ () => this.props.removeItem(this.props.id) }   
+                        title="Click to delete item" 
+                        onMouseEnter={this.title}
+                    />
                     </li>
 
                 </ul>

@@ -59,7 +59,7 @@ class GroceryList extends Component {
 
                 {/* Items List */}
                 {this.state.items.map( (item, index) =>
-                  <div className="item-container">
+                  <div className="item-container" key={index}>
                     <Item 
                     id={item.id}
                     name={item.name}

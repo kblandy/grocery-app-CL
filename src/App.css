@@ -246,13 +246,15 @@ ul {
 
 .item-container {
   display: flex;
-  width: 100%;
-
-
+  width: 80%;
 }
 
-.item-inner-container {
-  /* margin: auto; */
+.item-container:hover {
+  outline: 1px maroon dashed;
+}
+
+.item-image:hover {
+  background: url('./Images/x.jpg');
 }
 
 .img-stamp {
@@ -378,6 +380,13 @@ ul {
   padding: 10px;
   letter-spacing: 1px;
   border-bottom: 1px black dashed;
+  opacity: .6;
+  transition: 0.3s;
+}
+
+#weather-header:hover {
+  opacity: 1;
+  color: maroon;
 }
 
 #root {

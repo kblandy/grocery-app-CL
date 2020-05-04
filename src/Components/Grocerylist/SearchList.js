@@ -44,9 +44,6 @@ class SearchList extends Component {
 
         var { loaded } = this.state;
 
-        if(!loaded) {
-            return <div>Loading...</div>;
-        }
         if(loaded) {
 
                 return (
@@ -72,6 +69,10 @@ class SearchList extends Component {
                         )}
                     </div>
                 );   
+            } else {
+                return (
+                    <div>Loading...</div>
+                )
             }
             
         };
