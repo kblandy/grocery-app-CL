@@ -7,7 +7,7 @@ class SmallAd extends Component {
                 <h3 id="small-ad-header">{this.props.title}</h3>
                 <img id="img-ad" src={require('../../../Images/toilet-paper.jpg')} alt="toilet paper" />
 
-                <img id="small-ad-stamp" src={require('../../../Images/stamp.jpg')} alt="stamp" />
+                <img id="small-ad-stamp" clasName="mx-auto" src={require('../../../Images/stamp.jpg')} alt="stamp" />
                     <p className="small-ad-p">
                         Toilet Paper so SOFT you won't believe it's NATIONALIZED!
                         Responsible party members arrive early and never find themselves without.

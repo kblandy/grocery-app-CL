@@ -247,6 +247,7 @@ ul {
 .item-container {
   display: flex;
   width: 80%;
+  padding-left: 10px;
 }
 
 .item-container:hover {
@@ -433,10 +434,6 @@ ul {
   #big-article-flex-wide {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    height: 800px;
-  
   }
 
   /* hides in large screen */
@@ -446,18 +443,25 @@ ul {
 
   .container-covid-stats {
     display: flex;
-    flex-direction: row;
     width: 800px;
-    align-items: baseline;
-    justify-content: flex-end;
     border: 1px dashed maroon;
+    padding: 10px;
   }
 
   .covid-header {
-    padding: 5px;
-
+    padding: 3px;
+    font-size: 14px;
+    width: 30%;
+    margin-left: 1px;
   }
 
+  .covid-stat {
+    font-size: 14px;
+  }
+
+  .covid-title {
+    font-size: 8px;
+  }
 
   .form-container {
     width: 400px;
@@ -467,18 +471,20 @@ ul {
     display: flex;
     flex-direction: row;
     align-content: flex-start;
+    margin: 0;
+    width: 100%;
   }
 
   #covid-stats {
     order: 3;
-    margin: auto;
+    margin: 0;
   }
 
   #covid-subtitle {
     display: block;
-    padding: 10px;
+
     letter-spacing: 6px;
-    margin-top: 0;
+    margin: 30px;
     font-size: 25px;
   }
 
@@ -496,7 +502,16 @@ ul {
     width: 180px;
     opacity: .8;
     padding: 0;
-    margin: 0;
+    margin-left: 7px;
+  }
+
+  .item-container {
+    margin-left: 450px;
+  }
+
+  .item-container:hover {
+    outline: 1px maroon dashed;
+    width: 400px;
   }
 
   #small-ad {
@@ -509,6 +524,11 @@ ul {
     font-family: 'Charm', cursive;
     font-weight: bolder;
     position: relative;
+    outline: dashed maroon 2px;
+  }
+
+  #small-ad-header {
+    text-align: center;
   }
 
   .small-ad-p {

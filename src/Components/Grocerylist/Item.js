@@ -9,17 +9,15 @@ class Item extends Component {
             <div className="item-inner-container">
 
                 <ul className="d-inline-flex" id="item-ul">
-                <li>
-                    </li>
                     <li className="pr-2">
                         <img id="item-image" src={this.props.image} alt={this.props.name}/>
                     </li>
 
-                    <li className="pr-2">
+                    <li className="pr-2 justify-content-center align-self-center">
                         <h6 className="h6-item">{this.props.name}</h6>
                     </li>
 
-                    <li className="pr-2">
+                    <li className="pr-2 justify-content-center align-self-center">
                     <FontAwesomeIcon 
                         icon={faTrashAlt} 
                         onClick={ () => this.props.removeItem(this.props.id) }   
