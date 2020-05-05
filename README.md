@@ -1,8 +1,9 @@
-My Project Plan Name
-Grocery Store Shopping Application (better name pending!)
+# DoublePlus Shopping List
+### A tongue-in-cheek faux newspaper with 1984 propoganda theme
 
-Project Summary
-Allows user to search for items to add to a shopping list, delete and add items, check if a Kroger location has those items, and has an option to sort the items into categories by aisle based on user’s preferred Kroger location for ease of shopping.
+## Project Summary
+
+
 
 Technical summary
 Languages: React, Javascript Other: Bootstrap, jQuery APIs: Kroger Product API (https://developer.kroger.com/reference/#tag/Products), Kroger Location API (https://developer.kroger.com/reference/#tag/Locations), Kroger Product Search API (https://developer.kroger.com/documentation/consume/best-practices/product-search)
@@ -34,6 +35,8 @@ BrowserRouter and Route: npm install --save react-router-dom
 Bootstrap: npm install bootstrap
 Jquery: npm install jquery
 Popper: npm install popper.js
+
+FortAwesome/ReactFontAwesome: npm i -S @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/free-light-svg-icons @fortawesome/free-brands-svg-icons
 
 APIS used:
 

@@ -9,6 +9,7 @@ import Navigation from './Navigation';
 import Home from './Homepage/Home';
 import NewList from './NewList';
 import GroceryList from './Grocerylist/GroceryList';
+import Footer from './Footer';
 
 
 class App extends Component {
@@ -39,8 +40,8 @@ class App extends Component {
           
           {/* Footer */}
           <div>
-            <footer><img className="footer-image" src={require('../Images/1984-ingsoc.jpg')} alt="ingsoc logo" /> This Pamphlet Property of INGSOC</footer>
-            </div>
+            <Footer />
+          </div>
             
             
 

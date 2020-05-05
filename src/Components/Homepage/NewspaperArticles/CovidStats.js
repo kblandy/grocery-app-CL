@@ -29,7 +29,9 @@ class CovidStats extends Component {
         })
             .catch(error => alert('There was an error Processing: ', error));
     }
+
     render() {
+        
         if(this.state.loaded) {
             return (
                 <div id="covid-stats">
