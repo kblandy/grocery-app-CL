@@ -42,15 +42,9 @@ class AddItemForm extends Component {
     //when search button is clicked
     handleSubmit = (event) => {
       event.preventDefault();
-          //add item to form here with props->input value
       this.setState({
         submitted: true,
       });
-
-      console.log("this button has been clicked and is being processed");
-
-      //logs the user's value object
-      console.log("input state value is: ", this.state.inputValue);
       //fetches data using the user input
       this.getItem();
 

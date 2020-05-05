@@ -15,7 +15,6 @@ class CovidStats extends Component {
 
         request.then(response => {
             const data = response.data;
-            console.dir(data);
             this.setState({
                 loaded: true,
                 covidStats: [{
@@ -62,7 +61,7 @@ class CovidStats extends Component {
                                         <h4 className="covid-stat">{this.state.covidStats[0].totalNewDeathsToday}</h4>
                                     </span>
                                 </div>
-                                <span className="virus-tracker-credit" id="covid-credit">Data Source courtesy of<a href={this.state.covidStats[0].source} className="link-credit"> VirusTracker</a></span>
+                                <span className="virus-tracker-credit" id="covid-credit">Data Source courtesy of<a href={this.state.covidStats[0].source} className="link-credit" target="_blank" rel="noopener noreferrer"> VirusTracker</a></span>
                                     
                             </div>
                             {/* /Covid-19 statistic chart */}

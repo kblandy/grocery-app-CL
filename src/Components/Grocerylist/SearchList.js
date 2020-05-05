@@ -25,9 +25,6 @@ class SearchList extends Component {
         this.setState({
             addItem: true
         })
-
-        //addItem function from AddItem form should go here; callback!
-        console.log('add item button has been clicked');
     };
 
     //sets the clearButton state to false so that program can cycle through again

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import CovidStats from './NewspaperArticles/CovidStats';
 import WeatherBoard from './WeatherBoard';
-import SmallArticle from './NewspaperArticles/SmallArticle';
 import BigArticle from './NewspaperArticles/BigArticle';
 import Welcome from './Welcome';
 

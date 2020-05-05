@@ -37,7 +37,6 @@ class GroceryList extends Component {
 
   //removes item from items state object array
   handleRemoveItem = (id) => {
-    console.log("item removed ", id);
     this.setState( prevState => {
       return {
         items: prevState.items.filter( i => i.id !== id)
@@ -46,7 +45,6 @@ class GroceryList extends Component {
   }
 
     render() {
-      console.log(this.state.items);
         return (
             <div className="div-fix-collapse">
                 {/* Header Component */}

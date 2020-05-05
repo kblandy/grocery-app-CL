@@ -16,7 +16,6 @@ class WeatherBoard extends Component {
 
         request.then(response => {
             const data = response.data;
-            console.dir(data);
             this.setState({
                 loaded: true,
                 weatherStats: [{

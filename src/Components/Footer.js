@@ -12,14 +12,14 @@ class Footer extends Component {
                 </div>
 
 
-            <a href="https://github.com/kblandy" className="p-2">
+            <a href="https://github.com/kblandy" className="p-2" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                     icon={faGithubSquare}
                     size='2x' 
                 />
             </a>
 
-            <a href="https://www.linkedin.com/in/kirstynblandy/" className="p-2">
+            <a href="https://www.linkedin.com/in/kirstynblandy/" className="p-2" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                     icon={faLinkedin}
                     size='2x' 

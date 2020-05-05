@@ -5,12 +5,6 @@ class SmallArticle extends Component {
         return (
 
             <div className="column">
-
-                <h4 className="pt-5">Do your part</h4>
-                <p>
-                    In order to become self taught competent people and good party members, citizens should continue to work, even during these times of of political and pandemical implications.
-                </p>
-            
                 <div>
                     <h4 className="mx-auto pt-3">THOUGHTCRIME</h4>
                     <p>
