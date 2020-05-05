@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import { faLongArrowAltRight, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 class WeatherBoard extends Component {
 
     constructor() {
@@ -34,11 +37,17 @@ class WeatherBoard extends Component {
             
             return (
                 <div id="weather-header">
-
-                <img className="arrow" src={require('../../Images/arrow-left.jpg')} alt="arrow pointing left" />
-                    {this.state.weatherStats[0].weather} in {this.state.weatherStats[0].name}  
-                <img src={require('../../Images/arrow-right.jpg')} className="arrow" alt="arrow pointing right" />
-                
+                    <span className="p-3">
+                        <FontAwesomeIcon 
+                            icon={faLongArrowAltRight}
+                        />
+                    </span>
+                        {this.state.weatherStats[0].weather} in {this.state.weatherStats[0].name}  
+                    <span className="p-3">
+                        <FontAwesomeIcon 
+                            icon={faLongArrowAltLeft}
+                        />
+                    </span>
                 </div>
             )
         } else {

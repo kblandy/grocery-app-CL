@@ -226,10 +226,6 @@ ul {
   outline: 1px maroon dashed;
 }
 
-.item-image:hover {
-  background: url('./Images/x.jpg');
-}
-
 .img-stamp {
   border: 1px black solid;
   border-radius: 50%;
@@ -368,7 +364,7 @@ ul {
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
 
   /* Base Styles */
 
