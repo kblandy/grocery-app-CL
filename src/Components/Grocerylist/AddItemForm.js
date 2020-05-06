@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import SearchList from './SearchList';
 
+const API_KEY = 'da585cc03d43164f5e94d2df90eefbde';
+const APP_ID  = 'f0d6df51';
+
 
 class AddItemForm extends Component {
 
@@ -21,7 +24,7 @@ class AddItemForm extends Component {
     // api call to Edamame Food Database
 
     getItem = () => {
-      let request = axios.get(`https://api.edamam.com/api/food-database/parser?ingr=${this.state.inputValue}&page=0&app_id=f0d6df51&app_key=da585cc03d43164f5e94d2df90eefbde`);
+      let request = axios.get(`https://api.edamam.com/api/food-database/parser?ingr=${this.state.inputValue}&page=0&app_id=${APP_ID}&app_key=${API_KEY}`);
 
       request.then(response => {
         const data = response.data;

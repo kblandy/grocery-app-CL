@@ -4,6 +4,8 @@ import axios from 'axios';
 import { faLongArrowAltRight, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+const APP_ID = 'e884699dae6f7aaec2bc58185be351ff'
+
 class WeatherBoard extends Component {
 
     constructor() {
@@ -15,7 +17,7 @@ class WeatherBoard extends Component {
     };
 
     componentDidMount() {
-        let request = axios.get('http://api.openweathermap.org/data/2.5/weather?q=Louisville&appid=e884699dae6f7aaec2bc58185be351ff');
+        let request = axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Louisville&appid=${APP_ID}`);
 
         request.then(response => {
             const data = response.data;
