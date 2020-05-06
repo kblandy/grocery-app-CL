@@ -50,7 +50,7 @@ This is a React/JavaScript application that utilizes [Bootstrap](https://getboot
 
 2. [Coronavirus Tracker](https://thevirustracker.com/) => (no api key required!)
 
-3. OpenWeather => (api key required)
+3. [OpenWeather](https://openweathermap.org/) => (api key required)
     1. Sign Up for your free key
         - In Homepage -> WeatherBoard.js
         - replace APP_ID with the one that is sent to you
