@@ -9,7 +9,7 @@ class CovidStats extends Component {
             covidStats: []
         }
     };
-
+    //Covid Virus Tracker API Call 
     componentDidMount() {
         let request = axios.get('https://cors-anywhere.herokuapp.com/https://thevirustracker.com/free-api?global=stats');
 
@@ -34,6 +34,7 @@ class CovidStats extends Component {
         if(this.state.loaded) {
             return (
                 <div id="covid-stats">
+                {/* /Covid-19 statistics chart */}
                 <h3 id="covid-subtitle">{this.props.subtitle}</h3>
                             <div className="container-covid-stats">
                                 <h5 className="covid-header">{this.props.title}</h5>
@@ -64,7 +65,6 @@ class CovidStats extends Component {
                                 <span className="virus-tracker-credit" id="covid-credit">Data Source courtesy of<a href={this.state.covidStats[0].source} className="link-credit" target="_blank" rel="noopener noreferrer"> VirusTracker</a></span>
                                     
                             </div>
-                            {/* /Covid-19 statistic chart */}
                 </div>
             )
         } else {

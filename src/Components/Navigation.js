@@ -10,19 +10,15 @@ class Navigation extends Component {
 
         var today = new Date();
 
-
         var newsDate = (today.getDate() + ' ' + monthNames[today.getMonth()] + ', ' + (today.getFullYear()));
 
         return (
-
             <div>
- 
-
                 <span>
-                <h3 className="nav-header">{this.props.titleTop}</h3>
-                <h4 className="nav-date">{newsDate}</h4>
-                <h3 className="nav-header-bottom">{this.props.titleBottom}</h3>
-         
+                    <h3 className="nav-header">{this.props.titleTop}</h3>
+                    <h4 className="nav-date">{newsDate}</h4>
+                    <h3 className="nav-header-bottom">{this.props.titleBottom}</h3>
+            
                     <ul className="navbar container">
                         <li className="nav-link"><Link to="/home">Home</Link></li>
                         <li className="nav-link"><Link to="/newlist">New List</Link></li>

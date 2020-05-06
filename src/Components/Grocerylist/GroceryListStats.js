@@ -4,8 +4,7 @@ const GroceryListStats = ({ items, prices }) => {
 
     const totalItems = items.length;
 
-    //const totalItemsPrice -> add up all of the price.items and return total price
-
+    //returns length of items that are added in GroceryList  by user
     return (
         <span>
                 <p>

@@ -28,18 +28,7 @@ This is a React/JavaScript application that utilizes [Bootstrap](https://getboot
 
 1. npm install and run React application:
     > npm install
-
-2. BrowserRouter and Route: 
-    > npm install --save react-router-dom
-
-3. Bootstrap: 
-    > npm install bootstrap
-
-4. jQuery (Bootstrap will NOT run properly without jQuery):
-    > npm install jquery 
-
-5. FortAwesome/ReactFontAwesome: 
-    > npm i -S @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/free-light-svg-icons @fortawesome/free-brands-svg-icons
+    > npm start
 
 ## Implementing APIS
 

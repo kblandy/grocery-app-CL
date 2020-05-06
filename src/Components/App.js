@@ -28,13 +28,11 @@ class App extends Component {
               titleTop="Doubleplus" 
               titleBottom="Shopping List"
               />} />
-          <Route path="/home" component={Home} />
+          <Route exact path="/home" component={Home} />
           <Route exact path="/newlist" component={() => 
                   <NewList 
                     title="Create New List" 
                     subtitle="Fill form to create new list"
-                    // userList={this.userList}
-                    // createList={this.handleCreateList}
                     />} />
           <Route exact path="/mylists" component={GroceryList} />
           
@@ -42,17 +40,9 @@ class App extends Component {
           <div>
             <Footer />
           </div>
-            
-            
-
-
-          {/* <GroceryList /> */}
         
-
         </BrowserRouter>
       </div>
-
-      
     );
   }
 

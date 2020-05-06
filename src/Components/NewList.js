@@ -33,10 +33,7 @@ class NewList extends Component {
 
         //stores values to localStorage
         localStorage.setItem(target.name, target.value);
-        
-
     };
-
 
     handleSubmit(event) {
         event.preventDefault();
@@ -87,11 +84,5 @@ class NewList extends Component {
         );
     }
 };
-
-
-
-// var data_on_LS = localStorage.getItem('userListName', 'userListZipcode', 'userListDate');
-
-// userData.push(data_on_LS);
 
 export default NewList;

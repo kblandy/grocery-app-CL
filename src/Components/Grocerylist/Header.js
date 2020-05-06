@@ -19,8 +19,6 @@ const Header = ({ items, title, location, date }) => {
             
         </header>
         
-
-
     );
 };
 

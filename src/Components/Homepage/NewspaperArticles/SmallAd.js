@@ -4,6 +4,7 @@ class SmallAd extends Component {
     render() {
         return (
             <div id="small-ad">
+            {/* Toilet Paper Ad, only visible on large devices */}
                 <h3 id="small-ad-header">{this.props.title}</h3>
                 <img id="img-ad" src={require('../../../Images/toilet-paper.jpg')} alt="toilet paper" />
 

@@ -47,34 +47,25 @@ class BigArticle extends Component {
                                         Prolefeed Big Brother thinkpol upsub crimethink memory hole thoughtcrime blackwhite minitru ficdep artsem fullwise dayorder pornosec miniluv. r facecrime thinkpol artsem. Dayorder unperson ficdep artsem minitru groupthink doublethink prolefeed ownlife duckspeak fullwise. Minipax fullwise groupthink artsem oldthink doublethink doubleplus bellyfeel ownlife minitru Hate week pornosec  duckspeak upsub crimethink memory hole ficdep. UnpeProlefeed Hate week crimethink doublethink memory hole doubleplus duckspeak thoughtcrime unperson blackwhite joycamp unperson fullwise miniluv versificator facecrime thinkpol artsem.
                                     </p>
 
-
-                                        {/* <SmallArticle /> */}
                                     </div>
                                     <div className="col-sm">
                                         <div>
+                                        {/* SmallAd Component */}
                                             <SmallAd
                                                     title="Doubleplusgood Toilet Tissue" 
                                                 />
                                         </div>
                                         <div>
+                                        {/* SmallArticle Component */}
                                             <SmallArticle />
                                         </div>
-
                                     </div>
                                 </div>
-
-
-
                                 </div>
                             </div>
                     </div>
-                    {/* /News div
-                    <div>
-                        <SmallArticle />
-                    </div> */}
+
                 </div>
-
-
         );
     }
 };

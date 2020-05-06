@@ -65,7 +65,6 @@ class AddItemForm extends Component {
       
     };
 
-
     // will render Form with SearchList after the form is submitted
     render() {
       let searchForm = (

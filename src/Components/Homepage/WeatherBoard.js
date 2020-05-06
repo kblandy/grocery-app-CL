@@ -15,7 +15,7 @@ class WeatherBoard extends Component {
             weatherStats: []
         }
     };
-
+    // OpenWeather API Call
     componentDidMount() {
         let request = axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Louisville&appid=${APP_ID}`);
 
@@ -57,7 +57,6 @@ class WeatherBoard extends Component {
                 <div>Loading...</div>
             )
         }
-        
     }
 };
 

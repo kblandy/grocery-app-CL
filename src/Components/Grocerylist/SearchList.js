@@ -9,8 +9,6 @@ class SearchList extends Component {
             addItem: false,
             searchCleared: false
         }
-
-        
     }
 
     componentDidMount() {
@@ -36,15 +34,12 @@ class SearchList extends Component {
 
     };
     
-
     render() {
 
         var { loaded } = this.state;
 
         if(loaded) {
-
                 return (
-
                     <div className="container-sm">
     
                     {/* loops through api requested item and displays its name and image */}
@@ -75,7 +70,5 @@ class SearchList extends Component {
         };
         
     }
-
-
     
 export default SearchList;

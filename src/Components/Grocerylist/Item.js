@@ -18,6 +18,7 @@ class Item extends Component {
                     </li>
 
                     <li className="pr-2 justify-content-center align-self-center">
+                    {/* FontAwesome Trash icon so users can delete item from list */}
                     <FontAwesomeIcon 
                         icon={faTrashAlt} 
                         onClick={ () => this.props.removeItem(this.props.id) }   
