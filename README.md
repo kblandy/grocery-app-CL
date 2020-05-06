@@ -27,8 +27,8 @@ This is a React/JavaScript application that utilizes [Bootstrap](https://getboot
 ## Requirements to run the project:
 
 1. npm install and run React application:
-    > npm install
-    > npm start
+   - > npm install
+   - > npm start
 
 ## Implementing APIS
 
