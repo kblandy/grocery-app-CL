@@ -44,4 +44,4 @@ This is a React/JavaScript application that utilizes [Bootstrap](https://getboot
         - In Homepage -> WeatherBoard.js
         - replace APP_ID with the one that is sent to you
 
-- note, for the purposes of this assignment and an outdated browser, I have left my API_KEYs and APP_IDs in the assignment which will work, but is poor practice.
+- note, for the purposes of this assignment I have left my API_KEYs and APP_IDs in the assignment which will work, but is poor practice.
